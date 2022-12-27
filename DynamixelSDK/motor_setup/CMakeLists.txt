@@ -25,8 +25,19 @@ ament_target_dependencies(init_component
 rclcpp_components_register_nodes(init_component "motor_setup::SetupDynamixel")
 set(node_plugins "${node_plugins}motor_setup::SetupDynamixel;$<TARGET_FILE:init_component>\n")
 
+add_library(position_control SHARED src/position_control.cpp)
+target_compile_definitions(position_control PRIVATE "COMPOSITION_BUILDING_DLL")
+ament_target_dependencies(position_control
+  "rclcpp"
+  "rclcpp_components"
+  "dynamixel_sdk"
+  "dynamixel_sdk_inf")
+rclcpp_components_register_nodes(position_control "motor_setup::PositionControl")
+set(node_plugins "${node_plugins}motor_setup::PositionControl;$<TARGET_FILE:position_control>\n")
+
 install(TARGETS
   init_component
+  position_control
   ARCHIVE DESTINATION lib
   LIBRARY DESTINATION lib
   RUNTIME DESTINATION bin)
