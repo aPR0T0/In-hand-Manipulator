@@ -1,0 +1,6 @@
+setup_dynamixel_node:
+  ros__parameters:
+    device_name: "COM4"
+    addr_torque_enable: 24
+    protocol_version: 1.0
+    baudrate: 1000000
