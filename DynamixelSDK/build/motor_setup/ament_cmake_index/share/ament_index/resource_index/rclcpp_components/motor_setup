@@ -1,0 +1,2 @@
+motor_setup::SetupDynamixel;lib/libinit_component.so
+motor_setup::PositionControl;lib/libposition_control.so

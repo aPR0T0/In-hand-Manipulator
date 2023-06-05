@@ -1,0 +1,26 @@
+[0.007s] Invoking command in '/home/proto/Manipulator/DynamixelSDK/build/motor_setup': AMENT_PREFIX_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/proto/Manipulator/DynamixelSDK/build/motor_setup -- -j8 -l8
+[0.029s] -- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.132s] -- Found rclcpp: 16.0.4 (/opt/ros/humble/share/rclcpp/cmake)
+[0.159s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.160s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.164s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.172s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.182s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.218s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.219s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.308s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.407s] -- Found rclcpp_components: 16.0.4 (/opt/ros/humble/share/rclcpp_components/cmake)
+[0.447s] -- Found composition: 0.20.3 (/opt/ros/humble/share/composition/cmake)
+[0.447s] -- Found dynamixel_sdk: 3.7.40 (/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/cmake)
+[0.448s] -- Found dynamixel_sdk_inf: 3.7.40 (/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake)
+[0.470s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.475s] [31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:59 (message):
+[0.476s]   rosidl_generate_interfaces() called without any interface files
+[0.476s] Call Stack (most recent call first):
+[0.476s]   CMakeLists.txt:16 (rosidl_generate_interfaces)
+[0.476s] 
+[0.476s] [0m
+[0.476s] -- Configuring incomplete, errors occurred!
+[0.476s] See also "/home/proto/Manipulator/DynamixelSDK/build/motor_setup/CMakeFiles/CMakeOutput.log".
+[0.482s] gmake: *** [Makefile:308: cmake_check_build_system] Error 1
+[0.484s] Invoked command in '/home/proto/Manipulator/DynamixelSDK/build/motor_setup' returned '2': AMENT_PREFIX_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/proto/Manipulator/DynamixelSDK/build/motor_setup -- -j8 -l8

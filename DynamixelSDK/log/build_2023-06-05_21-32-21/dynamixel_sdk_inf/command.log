@@ -1,0 +1,4 @@
+Invoking command in '/home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf -- -j8 -l8
+Invoked command in '/home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf -- -j8 -l8
+Invoking command in '/home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf
+Invoked command in '/home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf

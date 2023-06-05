@@ -1,0 +1,196 @@
+[  2%] Built target dynamixel_sdk_inf__cpp
+[ 12%] Built target dynamixel_sdk_inf__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_copy_dynamixel_sdk_inf
+[ 36%] Built target dynamixel_sdk_inf__rosidl_typesupport_introspection_c
+[ 36%] Built target dynamixel_sdk_inf__rosidl_typesupport_cpp
+[ 44%] Built target dynamixel_sdk_inf__rosidl_typesupport_c
+[ 55%] Built target dynamixel_sdk_inf__rosidl_typesupport_introspection_cpp
+[ 65%] Built target dynamixel_sdk_inf__rosidl_typesupport_fastrtps_cpp
+[ 76%] Built target dynamixel_sdk_inf__rosidl_typesupport_fastrtps_c
+[ 76%] Built target dynamixel_sdk_inf
+[ 78%] Built target dynamixel_sdk_inf__py
+[ 87%] Built target dynamixel_sdk_inf__rosidl_generator_py
+[ 95%] Built target dynamixel_sdk_inf__rosidl_typesupport_introspection_c__pyext
+[ 95%] Built target dynamixel_sdk_inf__rosidl_typesupport_fastrtps_c__pyext
+[100%] Built target dynamixel_sdk_inf__rosidl_typesupport_c__pyext
+running egg_info
+writing dynamixel_sdk_inf.egg-info/PKG-INFO
+writing dependency_links to dynamixel_sdk_inf.egg-info/dependency_links.txt
+writing top-level names to dynamixel_sdk_inf.egg-info/top_level.txt
+reading manifest file 'dynamixel_sdk_inf.egg-info/SOURCES.txt'
+writing manifest file 'dynamixel_sdk_inf.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_dynamixel_sdk_inf_egg
+-- Install configuration: ""
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/ament_index/resource_index/rosidl_interfaces/dynamixel_sdk_inf
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/get_position.h
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_position__functions.c
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_id__functions.c
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_id__functions.h
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_position__type_support.h
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_position__functions.h
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_id__struct.h
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_id__type_support.h
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_position__struct.h
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/set_id.h
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_position__type_support.h
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_position__struct.h
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_position__functions.c
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_position__functions.h
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/set_position.h
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/rosidl_generator_c__visibility_control.h
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/environment/library_path.sh
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/environment/library_path.dsv
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib/libdynamixel_sdk_inf__rosidl_generator_c.so
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_position__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_id__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_position__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib/libdynamixel_sdk_inf__rosidl_typesupport_fastrtps_c.so
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/get_position.hpp
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/set_id.hpp
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_position__traits.hpp
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_id__traits.hpp
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_id__builder.hpp
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_position__struct.hpp
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_id__struct.hpp
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_position__builder.hpp
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_position__builder.hpp
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_position__traits.hpp
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_position__struct.hpp
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/set_position.hpp
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_position__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_id__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/dds_fastrtps
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_position__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/dds_fastrtps
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib/libdynamixel_sdk_inf__rosidl_typesupport_fastrtps_cpp.so
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_id__type_support.c
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_position__type_support.c
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_position__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_id__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_position__type_support.c
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_position__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib/libdynamixel_sdk_inf__rosidl_typesupport_introspection_c.so
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib/libdynamixel_sdk_inf__rosidl_typesupport_c.so
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_position__type_support.cpp
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_position__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_id__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_id__type_support.cpp
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_position__type_support.cpp
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_position__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib/libdynamixel_sdk_inf__rosidl_typesupport_introspection_cpp.so
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib/libdynamixel_sdk_inf__rosidl_typesupport_cpp.so
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/environment/pythonpath.sh
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/environment/pythonpath.dsv
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf-3.7.40-py3.10.egg-info
+-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf-3.7.40-py3.10.egg-info/SOURCES.txt
+-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf-3.7.40-py3.10.egg-info/PKG-INFO
+-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf-3.7.40-py3.10.egg-info/dependency_links.txt
+-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf-3.7.40-py3.10.egg-info/top_level.txt
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/dynamixel_sdk_inf_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/srv
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/srv/__init__.py
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/srv/_get_position_s.c
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/srv/_get_position.py
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/srv/_set_id_s.c
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/srv/_set_id.py
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/msg
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/msg/_set_position_s.c
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/msg/__init__.py
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/msg/_set_position.py
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/__init__.py
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/_dynamixel_sdk_inf_s.ep.rosidl_typesupport_c.c
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/_dynamixel_sdk_inf_s.ep.rosidl_typesupport_introspection_c.c
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/dynamixel_sdk_inf_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/libdynamixel_sdk_inf__rosidl_generator_py.so
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/dynamixel_sdk_inf_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/_dynamixel_sdk_inf_s.ep.rosidl_typesupport_fastrtps_c.c
+Listing '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf'...
+Listing '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/msg'...
+Listing '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/srv'...
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/dynamixel_sdk_inf_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/dynamixel_sdk_inf_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/dynamixel_sdk_inf_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib/libdynamixel_sdk_inf__rosidl_generator_py.so
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/msg/SetPosition.idl
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/srv/GetPosition.idl
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/srv/SetId.idl
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/msg/SetPosition.msg
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/srv/GetPosition.srv
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/srv/GetPosition_Request.msg
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/srv/GetPosition_Response.msg
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/srv/SetId.srv
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/srv/SetId_Request.msg
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/srv/SetId_Response.msg
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk_inf
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk_inf
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/environment/ament_prefix_path.sh
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/environment/path.sh
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/environment/path.dsv
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/local_setup.bash
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/local_setup.sh
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/local_setup.zsh
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/local_setup.dsv
+-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/package.dsv
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/ament_index/resource_index/packages/dynamixel_sdk_inf
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/export_dynamixel_sdk_inf__rosidl_generator_cExport.cmake
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/export_dynamixel_sdk_inf__rosidl_generator_cExport-noconfig.cmake
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/export_dynamixel_sdk_inf__rosidl_typesupport_fastrtps_cExport.cmake
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/export_dynamixel_sdk_inf__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/export_dynamixel_sdk_inf__rosidl_generator_cppExport.cmake
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/export_dynamixel_sdk_inf__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/export_dynamixel_sdk_inf__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/dynamixel_sdk_inf__rosidl_typesupport_introspection_cExport.cmake
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/dynamixel_sdk_inf__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/dynamixel_sdk_inf__rosidl_typesupport_cExport.cmake
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/dynamixel_sdk_inf__rosidl_typesupport_cExport-noconfig.cmake
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/dynamixel_sdk_inf__rosidl_typesupport_introspection_cppExport.cmake
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/dynamixel_sdk_inf__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/dynamixel_sdk_inf__rosidl_typesupport_cppExport.cmake
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/dynamixel_sdk_inf__rosidl_typesupport_cppExport-noconfig.cmake
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/export_dynamixel_sdk_inf__rosidl_generator_pyExport.cmake
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/export_dynamixel_sdk_inf__rosidl_generator_pyExport-noconfig.cmake
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/rosidl_cmake-extras.cmake
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/ament_cmake_export_targets-extras.cmake
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/dynamixel_sdk_infConfig.cmake
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/dynamixel_sdk_infConfig-version.cmake
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/package.xml

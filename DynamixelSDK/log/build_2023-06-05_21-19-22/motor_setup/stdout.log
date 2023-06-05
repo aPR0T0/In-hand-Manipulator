@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target set_pose[0m
+[ 33%] Built target position_control
+[ 66%] Built target init_component
+[ 83%] [32mBuilding CXX object CMakeFiles/set_pose.dir/src/position_pub.cpp.o[0m

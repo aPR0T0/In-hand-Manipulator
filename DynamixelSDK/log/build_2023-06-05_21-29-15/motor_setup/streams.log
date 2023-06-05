@@ -1,0 +1,37 @@
+[0.010s] Invoking command in '/home/proto/Manipulator/DynamixelSDK/build/motor_setup': CMAKE_PREFIX_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk:/home/proto/Manipulator/DynamixelSDK/install/motor_setup:/opt/ros/humble LD_LIBRARY_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/lib:/home/proto/Manipulator/DynamixelSDK/install/motor_setup/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/proto/Manipulator/DynamixelSDK/build/motor_setup -- -j8 -l8
+[0.041s] [35m[1mConsolidate compiler generated dependencies of target set_pose[0m
+[0.051s] [ 66%] Built target init_component
+[0.051s] [ 66%] Built target position_control
+[0.055s] [ 83%] [32mBuilding CXX object CMakeFiles/set_pose.dir/src/position_pub.cpp.o[0m
+[0.180s] [01m[K/home/proto/Manipulator/DynamixelSDK/motor_setup/src/position_pub.cpp:31:27:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K\[m[K’ in program
+[0.180s]    31 |       auto pose_message = [01;31m[K\[m[Kdynamixel_sdk_inf::msg::SetPosition();
+[0.180s]       |                           [01;31m[K^[m[K
+[1.619s] [01m[K/home/proto/Manipulator/DynamixelSDK/motor_setup/src/position_pub.cpp:[m[K In member function ‘[01m[Kvoid PositionPublisher::timer_callback()[m[K’:
+[1.619s] [01m[K/home/proto/Manipulator/DynamixelSDK/motor_setup/src/position_pub.cpp:33:29:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kdynamixel_sdk_inf::msg::SetPosition_<std::allocator<void> >[m[K’
+[1.619s]    33 |       std::cin>>pose_message[01;31m[K->[m[Kposition;
+[1.619s]       |                             [01;31m[K^~[m[K
+[1.619s] [01m[K/home/proto/Manipulator/DynamixelSDK/motor_setup/src/position_pub.cpp:34:19:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kdynamixel_sdk_inf::msg::SetPosition_<std::allocator<void> >[m[K’
+[1.620s]    34 |       pose_message[01;31m[K->[m[Kid = 1;
+[1.620s]       |                   [01;31m[K^~[m[K
+[1.620s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[1.620s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[1.620s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.620s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.620s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.620s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.620s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.620s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.620s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.620s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.620s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.620s]                  from [01m[K/home/proto/Manipulator/DynamixelSDK/motor_setup/src/position_pub.cpp:1[m[K:
+[1.620s] [01m[K/home/proto/Manipulator/DynamixelSDK/motor_setup/src/position_pub.cpp:35:82:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kdynamixel_sdk_inf::msg::SetPosition_<std::allocator<void> >[m[K’
+[1.620s]    35 |       RCLCPP_INFO(this->get_logger(), "Position: '%d' | ID: '%d'\n", pose_message[01;31m[K->[m[Kposition, pose_message->id);
+[1.620s]       |                                                                                  [01;31m[K^~[m[K
+[1.620s] [01m[K/home/proto/Manipulator/DynamixelSDK/motor_setup/src/position_pub.cpp:35:106:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kdynamixel_sdk_inf::msg::SetPosition_<std::allocator<void> >[m[K’
+[1.620s]    35 |       RCLCPP_INFO(this->get_logger(), "Position: '%d' | ID: '%d'\n", pose_message->position, pose_message[01;31m[K->[m[Kid);
+[1.620s]       |                                                                                                          [01;31m[K^~[m[K
+[2.199s] gmake[2]: *** [CMakeFiles/set_pose.dir/build.make:76: CMakeFiles/set_pose.dir/src/position_pub.cpp.o] Error 1
+[2.199s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/set_pose.dir/all] Error 2
+[2.199s] gmake: *** [Makefile:146: all] Error 2
+[2.201s] Invoked command in '/home/proto/Manipulator/DynamixelSDK/build/motor_setup' returned '2': CMAKE_PREFIX_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk:/home/proto/Manipulator/DynamixelSDK/install/motor_setup:/opt/ros/humble LD_LIBRARY_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/lib:/home/proto/Manipulator/DynamixelSDK/install/motor_setup/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/proto/Manipulator/DynamixelSDK/build/motor_setup -- -j8 -l8

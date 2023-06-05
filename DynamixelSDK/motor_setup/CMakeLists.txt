@@ -12,7 +12,6 @@ find_package(rclcpp_components REQUIRED)
 find_package(composition REQUIRED)
 find_package(dynamixel_sdk REQUIRED)
 find_package(dynamixel_sdk_inf REQUIRED)
-
 include_directories(include)
 
 add_library(init_component SHARED src/init_component.cpp)
@@ -24,7 +23,11 @@ ament_target_dependencies(init_component
   "dynamixel_sdk_inf")
 rclcpp_components_register_nodes(init_component "motor_setup::SetupDynamixel")
 set(node_plugins "${node_plugins}motor_setup::SetupDynamixel;$<TARGET_FILE:init_component>\n")
-
+add_executable(set_pose src/position_pub.cpp)
+ament_target_dependencies(set_pose 
+  "rclcpp" 
+  "std_msgs"
+  "dynamixel_sdk_inf" )
 add_library(position_control SHARED src/position_control.cpp)
 target_compile_definitions(position_control PRIVATE "COMPOSITION_BUILDING_DLL")
 ament_target_dependencies(position_control
@@ -47,6 +50,10 @@ install(DIRECTORY
   launch
   DESTINATION share/${PROJECT_NAME}
 )
+
+install(TARGETS
+  set_pose
+  DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

@@ -1,0 +1,8 @@
+{
+  "package_name": "dynamixel_sdk_inf",
+  "non_idl_tuples": [
+    "/home/proto/Manipulator/DynamixelSDK/dynamixel_sdk_inf:msg/SetPosition.msg",
+    "/home/proto/Manipulator/DynamixelSDK/dynamixel_sdk_inf:srv/GetPosition.srv",
+    "/home/proto/Manipulator/DynamixelSDK/dynamixel_sdk_inf:srv/SetId.srv"
+  ]
+}
