@@ -1,3 +1,0 @@
-# Constants
-# Request
-uint8[<=5] motor_ids
