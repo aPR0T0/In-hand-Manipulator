@@ -1,4 +1,4 @@
-# Install script for directory: /home/proto/Manipulator/DynamixelSDK/dynamixel_sdk_inf
+# Install script for directory: /home/proto/Manipulator/DynamixelSDK/src/dynamixel_sdk_inf
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -368,11 +368,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk_inf/msg" TYPE FILE FILES "/home/proto/Manipulator/DynamixelSDK/dynamixel_sdk_inf/msg/SetPosition.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk_inf/msg" TYPE FILE FILES "/home/proto/Manipulator/DynamixelSDK/src/dynamixel_sdk_inf/msg/SetPosition.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk_inf/srv" TYPE FILE FILES "/home/proto/Manipulator/DynamixelSDK/dynamixel_sdk_inf/srv/GetPosition.srv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk_inf/srv" TYPE FILE FILES "/home/proto/Manipulator/DynamixelSDK/src/dynamixel_sdk_inf/srv/GetPosition.srv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -384,7 +384,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk_inf/srv" TYPE FILE FILES "/home/proto/Manipulator/DynamixelSDK/dynamixel_sdk_inf/srv/SetId.srv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk_inf/srv" TYPE FILE FILES "/home/proto/Manipulator/DynamixelSDK/src/dynamixel_sdk_inf/srv/SetId.srv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -647,7 +647,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk_inf" TYPE FILE FILES "/home/proto/Manipulator/DynamixelSDK/dynamixel_sdk_inf/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk_inf" TYPE FILE FILES "/home/proto/Manipulator/DynamixelSDK/src/dynamixel_sdk_inf/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)

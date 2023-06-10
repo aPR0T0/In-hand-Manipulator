@@ -1,5 +1,5 @@
 # CMake generated Testfile for 
-# Source directory: /home/proto/Manipulator/DynamixelSDK/dynamixel_sdk_inf
+# Source directory: /home/proto/Manipulator/DynamixelSDK/src/dynamixel_sdk_inf
 # Build directory: /home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf
 # 
 # This file includes the relevant testing commands required for 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/proto/Manipulator/DynamixelSDK/motor_setup
+# Install script for directory: /home/proto/Manipulator/DynamixelSDK/src/motor_setup
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -89,7 +89,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/motor_setup" TYPE DIRECTORY FILES "/home/proto/Manipulator/DynamixelSDK/motor_setup/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/motor_setup" TYPE DIRECTORY FILES "/home/proto/Manipulator/DynamixelSDK/src/motor_setup/launch")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -172,7 +172,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/motor_setup" TYPE FILE FILES "/home/proto/Manipulator/DynamixelSDK/motor_setup/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/motor_setup" TYPE FILE FILES "/home/proto/Manipulator/DynamixelSDK/src/motor_setup/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/proto/Manipulator/DynamixelSDK/motor_setup
+CMAKE_SOURCE_DIR = /home/proto/Manipulator/DynamixelSDK/src/motor_setup
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/proto/Manipulator/DynamixelSDK/build/motor_setup
@@ -70,18 +70,18 @@ include CMakeFiles/set_pose.dir/progress.make
 include CMakeFiles/set_pose.dir/flags.make
 
 CMakeFiles/set_pose.dir/src/position_pub.cpp.o: CMakeFiles/set_pose.dir/flags.make
-CMakeFiles/set_pose.dir/src/position_pub.cpp.o: /home/proto/Manipulator/DynamixelSDK/motor_setup/src/position_pub.cpp
+CMakeFiles/set_pose.dir/src/position_pub.cpp.o: /home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/position_pub.cpp
 CMakeFiles/set_pose.dir/src/position_pub.cpp.o: CMakeFiles/set_pose.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/proto/Manipulator/DynamixelSDK/build/motor_setup/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/set_pose.dir/src/position_pub.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/set_pose.dir/src/position_pub.cpp.o -MF CMakeFiles/set_pose.dir/src/position_pub.cpp.o.d -o CMakeFiles/set_pose.dir/src/position_pub.cpp.o -c /home/proto/Manipulator/DynamixelSDK/motor_setup/src/position_pub.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/set_pose.dir/src/position_pub.cpp.o -MF CMakeFiles/set_pose.dir/src/position_pub.cpp.o.d -o CMakeFiles/set_pose.dir/src/position_pub.cpp.o -c /home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/position_pub.cpp
 
 CMakeFiles/set_pose.dir/src/position_pub.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/set_pose.dir/src/position_pub.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/proto/Manipulator/DynamixelSDK/motor_setup/src/position_pub.cpp > CMakeFiles/set_pose.dir/src/position_pub.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/position_pub.cpp > CMakeFiles/set_pose.dir/src/position_pub.cpp.i
 
 CMakeFiles/set_pose.dir/src/position_pub.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/set_pose.dir/src/position_pub.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/proto/Manipulator/DynamixelSDK/motor_setup/src/position_pub.cpp -o CMakeFiles/set_pose.dir/src/position_pub.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/position_pub.cpp -o CMakeFiles/set_pose.dir/src/position_pub.cpp.s
 
 # Object files for target set_pose
 set_pose_OBJECTS = \
@@ -175,6 +175,6 @@ CMakeFiles/set_pose.dir/clean:
 .PHONY : CMakeFiles/set_pose.dir/clean
 
 CMakeFiles/set_pose.dir/depend:
-	cd /home/proto/Manipulator/DynamixelSDK/build/motor_setup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/proto/Manipulator/DynamixelSDK/motor_setup /home/proto/Manipulator/DynamixelSDK/motor_setup /home/proto/Manipulator/DynamixelSDK/build/motor_setup /home/proto/Manipulator/DynamixelSDK/build/motor_setup /home/proto/Manipulator/DynamixelSDK/build/motor_setup/CMakeFiles/set_pose.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/proto/Manipulator/DynamixelSDK/build/motor_setup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/proto/Manipulator/DynamixelSDK/src/motor_setup /home/proto/Manipulator/DynamixelSDK/src/motor_setup /home/proto/Manipulator/DynamixelSDK/build/motor_setup /home/proto/Manipulator/DynamixelSDK/build/motor_setup /home/proto/Manipulator/DynamixelSDK/build/motor_setup/CMakeFiles/set_pose.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/set_pose.dir/depend
 

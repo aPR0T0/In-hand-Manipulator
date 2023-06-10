@@ -54,7 +54,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/proto/Manipulator/DynamixelSDK/dynamixel_sdk_inf
+CMAKE_SOURCE_DIR = /home/proto/Manipulator/DynamixelSDK/src/dynamixel_sdk_inf
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf

@@ -1,0 +1,35 @@
+[0.008s] Invoking command in '/home/proto/Manipulator/DynamixelSDK/build/motor_setup': CMAKE_PREFIX_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk:/home/proto/Manipulator/DynamixelSDK/install/motor_setup:/opt/ros/humble LD_LIBRARY_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/lib:/home/proto/Manipulator/DynamixelSDK/install/motor_setup/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/proto/Manipulator/DynamixelSDK/build/motor_setup -- -j8 -l8
+[0.048s] [35m[1mConsolidate compiler generated dependencies of target set_pose[0m
+[0.061s] [ 33%] Built target position_control
+[0.062s] [ 66%] Built target init_component
+[0.065s] [ 83%] [32mBuilding CXX object CMakeFiles/set_pose.dir/src/position_pub.cpp.o[0m
+[3.082s] [100%] [32m[1mLinking CXX executable set_pose[0m
+[3.221s] [100%] Built target set_pose
+[3.230s] Invoked command in '/home/proto/Manipulator/DynamixelSDK/build/motor_setup' returned '0': CMAKE_PREFIX_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk:/home/proto/Manipulator/DynamixelSDK/install/motor_setup:/opt/ros/humble LD_LIBRARY_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/lib:/home/proto/Manipulator/DynamixelSDK/install/motor_setup/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/proto/Manipulator/DynamixelSDK/build/motor_setup -- -j8 -l8
+[3.255s] Invoking command in '/home/proto/Manipulator/DynamixelSDK/build/motor_setup': CMAKE_PREFIX_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk:/home/proto/Manipulator/DynamixelSDK/install/motor_setup:/opt/ros/humble LD_LIBRARY_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/lib:/home/proto/Manipulator/DynamixelSDK/install/motor_setup/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/proto/Manipulator/DynamixelSDK/build/motor_setup
+[3.261s] -- Install configuration: ""
+[3.261s] -- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/lib/libinit_component.so
+[3.261s] -- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/lib/libposition_control.so
+[3.261s] -- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/launch
+[3.261s] -- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/launch/init_component.launch.py
+[3.261s] -- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/launch/__pycache__
+[3.262s] -- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/launch/__pycache__/init_component.launch.cpython-310.pyc
+[3.262s] -- Installing: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/lib/motor_setup/set_pose
+[3.262s] -- Set runtime path of "/home/proto/Manipulator/DynamixelSDK/install/motor_setup/lib/motor_setup/set_pose" to ""
+[3.262s] -- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/ament_index/resource_index/package_run_dependencies/motor_setup
+[3.262s] -- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/ament_index/resource_index/parent_prefix_path/motor_setup
+[3.263s] -- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/environment/ament_prefix_path.sh
+[3.263s] -- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/environment/ament_prefix_path.dsv
+[3.263s] -- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/environment/path.sh
+[3.263s] -- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/environment/path.dsv
+[3.263s] -- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/local_setup.bash
+[3.263s] -- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/local_setup.sh
+[3.263s] -- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/local_setup.zsh
+[3.263s] -- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/local_setup.dsv
+[3.263s] -- Installing: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/package.dsv
+[3.263s] -- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/ament_index/resource_index/packages/motor_setup
+[3.263s] -- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/ament_index/resource_index/rclcpp_components/motor_setup
+[3.263s] -- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/cmake/motor_setupConfig.cmake
+[3.263s] -- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/cmake/motor_setupConfig-version.cmake
+[3.263s] -- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/package.xml
+[3.266s] Invoked command in '/home/proto/Manipulator/DynamixelSDK/build/motor_setup' returned '0': CMAKE_PREFIX_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk:/home/proto/Manipulator/DynamixelSDK/install/motor_setup:/opt/ros/humble LD_LIBRARY_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/lib:/home/proto/Manipulator/DynamixelSDK/install/motor_setup/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/proto/Manipulator/DynamixelSDK/build/motor_setup

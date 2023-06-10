@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/proto/Manipulator/DynamixelSDK/motor_setup/src/position_control.cpp" "CMakeFiles/position_control.dir/src/position_control.cpp.o" "gcc" "CMakeFiles/position_control.dir/src/position_control.cpp.o.d"
+  "/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/position_control.cpp" "CMakeFiles/position_control.dir/src/position_control.cpp.o" "gcc" "CMakeFiles/position_control.dir/src/position_control.cpp.o.d"
   )
 
 # Targets to which this target links.

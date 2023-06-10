@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/proto/Manipulator/DynamixelSDK/motor_setup
+CMAKE_SOURCE_DIR = /home/proto/Manipulator/DynamixelSDK/src/motor_setup
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/proto/Manipulator/DynamixelSDK/build/motor_setup
@@ -70,18 +70,18 @@ include CMakeFiles/position_control.dir/progress.make
 include CMakeFiles/position_control.dir/flags.make
 
 CMakeFiles/position_control.dir/src/position_control.cpp.o: CMakeFiles/position_control.dir/flags.make
-CMakeFiles/position_control.dir/src/position_control.cpp.o: /home/proto/Manipulator/DynamixelSDK/motor_setup/src/position_control.cpp
+CMakeFiles/position_control.dir/src/position_control.cpp.o: /home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/position_control.cpp
 CMakeFiles/position_control.dir/src/position_control.cpp.o: CMakeFiles/position_control.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/proto/Manipulator/DynamixelSDK/build/motor_setup/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/position_control.dir/src/position_control.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/position_control.dir/src/position_control.cpp.o -MF CMakeFiles/position_control.dir/src/position_control.cpp.o.d -o CMakeFiles/position_control.dir/src/position_control.cpp.o -c /home/proto/Manipulator/DynamixelSDK/motor_setup/src/position_control.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/position_control.dir/src/position_control.cpp.o -MF CMakeFiles/position_control.dir/src/position_control.cpp.o.d -o CMakeFiles/position_control.dir/src/position_control.cpp.o -c /home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/position_control.cpp
 
 CMakeFiles/position_control.dir/src/position_control.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/position_control.dir/src/position_control.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/proto/Manipulator/DynamixelSDK/motor_setup/src/position_control.cpp > CMakeFiles/position_control.dir/src/position_control.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/position_control.cpp > CMakeFiles/position_control.dir/src/position_control.cpp.i
 
 CMakeFiles/position_control.dir/src/position_control.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/position_control.dir/src/position_control.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/proto/Manipulator/DynamixelSDK/motor_setup/src/position_control.cpp -o CMakeFiles/position_control.dir/src/position_control.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/position_control.cpp -o CMakeFiles/position_control.dir/src/position_control.cpp.s
 
 # Object files for target position_control
 position_control_OBJECTS = \
@@ -179,6 +179,6 @@ CMakeFiles/position_control.dir/clean:
 .PHONY : CMakeFiles/position_control.dir/clean
 
 CMakeFiles/position_control.dir/depend:
-	cd /home/proto/Manipulator/DynamixelSDK/build/motor_setup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/proto/Manipulator/DynamixelSDK/motor_setup /home/proto/Manipulator/DynamixelSDK/motor_setup /home/proto/Manipulator/DynamixelSDK/build/motor_setup /home/proto/Manipulator/DynamixelSDK/build/motor_setup /home/proto/Manipulator/DynamixelSDK/build/motor_setup/CMakeFiles/position_control.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/proto/Manipulator/DynamixelSDK/build/motor_setup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/proto/Manipulator/DynamixelSDK/src/motor_setup /home/proto/Manipulator/DynamixelSDK/src/motor_setup /home/proto/Manipulator/DynamixelSDK/build/motor_setup /home/proto/Manipulator/DynamixelSDK/build/motor_setup /home/proto/Manipulator/DynamixelSDK/build/motor_setup/CMakeFiles/position_control.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/position_control.dir/depend
 

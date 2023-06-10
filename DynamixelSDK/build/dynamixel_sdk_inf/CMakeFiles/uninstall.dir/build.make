@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/proto/Manipulator/DynamixelSDK/dynamixel_sdk_inf
+CMAKE_SOURCE_DIR = /home/proto/Manipulator/DynamixelSDK/src/dynamixel_sdk_inf
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/proto/Manipulator/DynamixelSDK/dynamixel_sdk_inf /home/proto/Manipulator/DynamixelSDK/dynamixel_sdk_inf /home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf /home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf /home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/proto/Manipulator/DynamixelSDK/src/dynamixel_sdk_inf /home/proto/Manipulator/DynamixelSDK/src/dynamixel_sdk_inf /home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf /home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf /home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

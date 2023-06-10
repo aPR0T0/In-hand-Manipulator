@@ -1,7 +1,7 @@
 CMakeFiles/position_control.dir/src/position_control.cpp.o: \
- /home/proto/Manipulator/DynamixelSDK/motor_setup/src/position_control.cpp \
+ /home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/position_control.cpp \
  /usr/include/stdc-predef.h \
- /home/proto/Manipulator/DynamixelSDK/motor_setup/include/motor_setup/position_control.hpp \
+ /home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/position_control.hpp \
  /usr/include/c++/11/cstdio \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -619,7 +619,7 @@ CMakeFiles/position_control.dir/src/position_control.cpp.o: \
  /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_id__struct.hpp \
  /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_id__builder.hpp \
  /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_id__traits.hpp \
- /home/proto/Manipulator/DynamixelSDK/motor_setup/include/motor_setup/visibility_control.h \
+ /home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/visibility_control.h \
  /opt/ros/humble/include/rclcpp_components/rclcpp_components/register_node_macro.hpp \
  /opt/ros/humble/include/class_loader/class_loader/class_loader.hpp \
  /usr/include/c++/11/cstddef /usr/include/console_bridge/console.h \

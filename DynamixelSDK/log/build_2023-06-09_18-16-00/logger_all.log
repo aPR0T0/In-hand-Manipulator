@@ -1,0 +1,302 @@
+[0.196s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.196s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f1e72e09b70>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f1e72f46110>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f1e72f46110>>)
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.217s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/proto/Manipulator/DynamixelSDK'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel_sdk) by extensions ['ignore', 'ignore_ament_install']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel_sdk) by extension 'ignore'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel_sdk) by extension 'ignore_ament_install'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel_sdk) by extensions ['colcon_pkg']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel_sdk) by extension 'colcon_pkg'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel_sdk) by extensions ['colcon_meta']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel_sdk) by extension 'colcon_meta'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel_sdk) by extensions ['ros']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel_sdk) by extension 'ros'
+[0.228s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dynamixel_sdk' with type 'ros.ament_cmake' and name 'dynamixel_sdk'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel_sdk_inf) by extensions ['ignore', 'ignore_ament_install']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel_sdk_inf) by extension 'ignore'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel_sdk_inf) by extension 'ignore_ament_install'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel_sdk_inf) by extensions ['colcon_pkg']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel_sdk_inf) by extension 'colcon_pkg'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel_sdk_inf) by extensions ['colcon_meta']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel_sdk_inf) by extension 'colcon_meta'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel_sdk_inf) by extensions ['ros']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/dynamixel_sdk_inf) by extension 'ros'
+[0.228s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dynamixel_sdk_inf' with type 'ros.ament_cmake' and name 'dynamixel_sdk_inf'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_setup) by extensions ['ignore', 'ignore_ament_install']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_setup) by extension 'ignore'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_setup) by extension 'ignore_ament_install'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_setup) by extensions ['colcon_pkg']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_setup) by extension 'colcon_pkg'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_setup) by extensions ['colcon_meta']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_setup) by extension 'colcon_meta'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_setup) by extensions ['ros']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_setup) by extension 'ros'
+[0.229s] DEBUG:colcon.colcon_core.package_identification:Package 'src/motor_setup' with type 'ros.ament_cmake' and name 'motor_setup'
+[0.229s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.229s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.229s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.229s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.229s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.246s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/proto/Manipulator/DynamixelSDK/install
+[0.247s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 418 installed packages in /opt/ros/humble
+[0.248s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.296s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'dynamixel_sdk' is in: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk, /opt/ros/humble
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding dynamixel_sdk
+
+This may be promoted to an error in a future release of colcon-override-check.
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_args' from command line to 'None'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_target' from command line to 'None'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_clean_cache' from command line to 'False'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_clean_first' from command line to 'False'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_force_configure' from command line to 'False'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'ament_cmake_args' from command line to 'None'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'catkin_cmake_args' from command line to 'None'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.297s] DEBUG:colcon.colcon_core.verb:Building package 'dynamixel_sdk' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk', 'merge_install': False, 'path': '/home/proto/Manipulator/DynamixelSDK/src/dynamixel_sdk', 'symlink_install': False, 'test_result_base': None}
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_inf' build argument 'cmake_args' from command line to 'None'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_inf' build argument 'cmake_target' from command line to 'None'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_inf' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_inf' build argument 'cmake_clean_cache' from command line to 'False'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_inf' build argument 'cmake_clean_first' from command line to 'False'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_inf' build argument 'cmake_force_configure' from command line to 'False'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_inf' build argument 'ament_cmake_args' from command line to 'None'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_inf' build argument 'catkin_cmake_args' from command line to 'None'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_inf' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.298s] DEBUG:colcon.colcon_core.verb:Building package 'dynamixel_sdk_inf' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf', 'merge_install': False, 'path': '/home/proto/Manipulator/DynamixelSDK/src/dynamixel_sdk_inf', 'symlink_install': False, 'test_result_base': None}
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'motor_setup' build argument 'cmake_args' from command line to 'None'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'motor_setup' build argument 'cmake_target' from command line to 'None'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'motor_setup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'motor_setup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'motor_setup' build argument 'cmake_clean_first' from command line to 'False'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'motor_setup' build argument 'cmake_force_configure' from command line to 'False'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'motor_setup' build argument 'ament_cmake_args' from command line to 'None'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'motor_setup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'motor_setup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.299s] DEBUG:colcon.colcon_core.verb:Building package 'motor_setup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/proto/Manipulator/DynamixelSDK/build/motor_setup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/proto/Manipulator/DynamixelSDK/install/motor_setup', 'merge_install': False, 'path': '/home/proto/Manipulator/DynamixelSDK/src/motor_setup', 'symlink_install': False, 'test_result_base': None}
+[0.299s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.301s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.301s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/proto/Manipulator/DynamixelSDK/src/dynamixel_sdk' with build type 'ament_cmake'
+[0.301s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/proto/Manipulator/DynamixelSDK/src/dynamixel_sdk'
+[0.304s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.305s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.305s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.309s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/proto/Manipulator/DynamixelSDK/src/dynamixel_sdk_inf' with build type 'ament_cmake'
+[0.309s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/proto/Manipulator/DynamixelSDK/src/dynamixel_sdk_inf'
+[0.310s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.310s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.317s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk -- -j8 -l8
+[0.319s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf -- -j8 -l8
+[0.374s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk -- -j8 -l8
+[0.416s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk
+[0.424s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk)
+[0.428s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk
+[0.431s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk' for CMake module files
+[0.431s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk' for CMake config files
+[0.431s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk', 'cmake_prefix_path')
+[0.432s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.ps1'
+[0.433s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.dsv'
+[0.433s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.sh'
+[0.434s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/lib'
+[0.434s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk', 'ld_library_path_lib')
+[0.435s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.ps1'
+[0.436s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.dsv'
+[0.436s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.sh'
+[0.436s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/bin'
+[0.436s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/lib/pkgconfig/dynamixel_sdk.pc'
+[0.436s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/lib/python3.10/site-packages'
+[0.436s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/bin'
+[0.438s] INFO:colcon.colcon_core.shell:Creating package script '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/package.ps1'
+[0.439s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/package.dsv'
+[0.439s] INFO:colcon.colcon_core.shell:Creating package script '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/package.sh'
+[0.440s] INFO:colcon.colcon_core.shell:Creating package script '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/package.bash'
+[0.440s] INFO:colcon.colcon_core.shell:Creating package script '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/package.zsh'
+[0.441s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/colcon-core/packages/dynamixel_sdk)
+[0.475s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk)
+[0.477s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk' for CMake module files
+[0.477s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk' for CMake config files
+[0.477s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk', 'cmake_prefix_path')
+[0.479s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.ps1'
+[0.479s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.dsv'
+[0.480s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.sh'
+[0.480s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/lib'
+[0.480s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk', 'ld_library_path_lib')
+[0.482s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.ps1'
+[0.482s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.dsv'
+[0.482s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.sh'
+[0.483s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/bin'
+[0.483s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/lib/pkgconfig/dynamixel_sdk.pc'
+[0.483s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/lib/python3.10/site-packages'
+[0.483s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/bin'
+[0.485s] INFO:colcon.colcon_core.shell:Creating package script '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/package.ps1'
+[0.485s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/package.dsv'
+[0.486s] INFO:colcon.colcon_core.shell:Creating package script '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/package.sh'
+[0.486s] INFO:colcon.colcon_core.shell:Creating package script '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/package.bash'
+[0.486s] INFO:colcon.colcon_core.shell:Creating package script '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/package.zsh'
+[0.487s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/colcon-core/packages/dynamixel_sdk)
+[0.598s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf -- -j8 -l8
+[0.671s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf
+[0.709s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk_inf)
+[0.711s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf' for CMake module files
+[0.711s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf
+[0.711s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf' for CMake config files
+[0.711s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_inf', 'cmake_prefix_path')
+[0.712s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/hook/cmake_prefix_path.ps1'
+[0.713s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/hook/cmake_prefix_path.dsv'
+[0.713s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/hook/cmake_prefix_path.sh'
+[0.713s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib'
+[0.713s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_inf', 'ld_library_path_lib')
+[0.714s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/hook/ld_library_path_lib.ps1'
+[0.714s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/hook/ld_library_path_lib.dsv'
+[0.715s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/hook/ld_library_path_lib.sh'
+[0.715s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/bin'
+[0.715s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib/pkgconfig/dynamixel_sdk_inf.pc'
+[0.715s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib/python3.10/site-packages'
+[0.715s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/bin'
+[0.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/package.ps1'
+[0.716s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/package.dsv'
+[0.717s] INFO:colcon.colcon_core.shell:Creating package script '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/package.sh'
+[0.717s] INFO:colcon.colcon_core.shell:Creating package script '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/package.bash'
+[0.717s] INFO:colcon.colcon_core.shell:Creating package script '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/package.zsh'
+[0.717s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/colcon-core/packages/dynamixel_sdk_inf)
+[0.786s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk_inf)
+[0.787s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf' for CMake module files
+[0.787s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf' for CMake config files
+[0.787s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_inf', 'cmake_prefix_path')
+[0.788s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/hook/cmake_prefix_path.ps1'
+[0.789s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/hook/cmake_prefix_path.dsv'
+[0.789s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/hook/cmake_prefix_path.sh'
+[0.789s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib'
+[0.789s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_inf', 'ld_library_path_lib')
+[0.790s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/hook/ld_library_path_lib.ps1'
+[0.791s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/hook/ld_library_path_lib.dsv'
+[0.791s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/hook/ld_library_path_lib.sh'
+[0.791s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/bin'
+[0.791s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib/pkgconfig/dynamixel_sdk_inf.pc'
+[0.791s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib/python3.10/site-packages'
+[0.792s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/bin'
+[0.793s] INFO:colcon.colcon_core.shell:Creating package script '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/package.ps1'
+[0.793s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/package.dsv'
+[0.794s] INFO:colcon.colcon_core.shell:Creating package script '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/package.sh'
+[0.794s] INFO:colcon.colcon_core.shell:Creating package script '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/package.bash'
+[0.794s] INFO:colcon.colcon_core.shell:Creating package script '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/package.zsh'
+[0.794s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/colcon-core/packages/dynamixel_sdk_inf)
+[0.795s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/proto/Manipulator/DynamixelSDK/src/motor_setup' with build type 'ament_cmake'
+[0.795s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/proto/Manipulator/DynamixelSDK/src/motor_setup'
+[0.796s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.796s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.806s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/proto/Manipulator/DynamixelSDK/build/motor_setup': CMAKE_PREFIX_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk:/home/proto/Manipulator/DynamixelSDK/install/motor_setup:/opt/ros/humble LD_LIBRARY_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/lib:/home/proto/Manipulator/DynamixelSDK/install/motor_setup/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/proto/Manipulator/DynamixelSDK/build/motor_setup -- -j8 -l8
+[3.991s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/proto/Manipulator/DynamixelSDK/build/motor_setup' returned '0': CMAKE_PREFIX_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk:/home/proto/Manipulator/DynamixelSDK/install/motor_setup:/opt/ros/humble LD_LIBRARY_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/lib:/home/proto/Manipulator/DynamixelSDK/install/motor_setup/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/proto/Manipulator/DynamixelSDK/build/motor_setup -- -j8 -l8
+[4.015s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/proto/Manipulator/DynamixelSDK/build/motor_setup': CMAKE_PREFIX_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk:/home/proto/Manipulator/DynamixelSDK/install/motor_setup:/opt/ros/humble LD_LIBRARY_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/lib:/home/proto/Manipulator/DynamixelSDK/install/motor_setup/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/proto/Manipulator/DynamixelSDK/build/motor_setup
+[4.023s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor_setup)
+[4.024s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/motor_setup' for CMake module files
+[4.024s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/proto/Manipulator/DynamixelSDK/build/motor_setup' returned '0': CMAKE_PREFIX_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk:/home/proto/Manipulator/DynamixelSDK/install/motor_setup:/opt/ros/humble LD_LIBRARY_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/lib:/home/proto/Manipulator/DynamixelSDK/install/motor_setup/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/proto/Manipulator/DynamixelSDK/build/motor_setup
+[4.025s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/motor_setup' for CMake config files
+[4.025s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_setup', 'cmake_prefix_path')
+[4.025s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/hook/cmake_prefix_path.ps1'
+[4.026s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/hook/cmake_prefix_path.dsv'
+[4.026s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/hook/cmake_prefix_path.sh'
+[4.026s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/lib'
+[4.026s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_setup', 'ld_library_path_lib')
+[4.027s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/hook/ld_library_path_lib.ps1'
+[4.027s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/hook/ld_library_path_lib.dsv'
+[4.028s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/hook/ld_library_path_lib.sh'
+[4.028s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/bin'
+[4.028s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/lib/pkgconfig/motor_setup.pc'
+[4.028s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/lib/python3.10/site-packages'
+[4.028s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/bin'
+[4.029s] INFO:colcon.colcon_core.shell:Creating package script '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/package.ps1'
+[4.029s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/package.dsv'
+[4.030s] INFO:colcon.colcon_core.shell:Creating package script '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/package.sh'
+[4.030s] INFO:colcon.colcon_core.shell:Creating package script '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/package.bash'
+[4.030s] INFO:colcon.colcon_core.shell:Creating package script '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/package.zsh'
+[4.030s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/colcon-core/packages/motor_setup)
+[4.053s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor_setup)
+[4.055s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/motor_setup' for CMake module files
+[4.055s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/motor_setup' for CMake config files
+[4.055s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_setup', 'cmake_prefix_path')
+[4.056s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/hook/cmake_prefix_path.ps1'
+[4.057s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/hook/cmake_prefix_path.dsv'
+[4.057s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/hook/cmake_prefix_path.sh'
+[4.057s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/lib'
+[4.058s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_setup', 'ld_library_path_lib')
+[4.059s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/hook/ld_library_path_lib.ps1'
+[4.059s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/hook/ld_library_path_lib.dsv'
+[4.059s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/hook/ld_library_path_lib.sh'
+[4.060s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/bin'
+[4.060s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/lib/pkgconfig/motor_setup.pc'
+[4.060s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/lib/python3.10/site-packages'
+[4.060s] Level 1:colcon.colcon_core.environment:checking '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/bin'
+[4.061s] INFO:colcon.colcon_core.shell:Creating package script '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/package.ps1'
+[4.061s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/package.dsv'
+[4.062s] INFO:colcon.colcon_core.shell:Creating package script '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/package.sh'
+[4.062s] INFO:colcon.colcon_core.shell:Creating package script '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/package.bash'
+[4.062s] INFO:colcon.colcon_core.shell:Creating package script '/home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/package.zsh'
+[4.062s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/colcon-core/packages/motor_setup)
+[4.062s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.063s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.063s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.063s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.068s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.068s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.068s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.084s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.086s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/proto/Manipulator/DynamixelSDK/install/local_setup.ps1'
+[4.087s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/proto/Manipulator/DynamixelSDK/install/_local_setup_util_ps1.py'
+[4.089s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/proto/Manipulator/DynamixelSDK/install/setup.ps1'
+[4.090s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/proto/Manipulator/DynamixelSDK/install/local_setup.sh'
+[4.092s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/proto/Manipulator/DynamixelSDK/install/_local_setup_util_sh.py'
+[4.092s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/proto/Manipulator/DynamixelSDK/install/setup.sh'
+[4.094s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/proto/Manipulator/DynamixelSDK/install/local_setup.bash'
+[4.095s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/proto/Manipulator/DynamixelSDK/install/setup.bash'
+[4.096s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/proto/Manipulator/DynamixelSDK/install/local_setup.zsh'
+[4.096s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/proto/Manipulator/DynamixelSDK/install/setup.zsh'

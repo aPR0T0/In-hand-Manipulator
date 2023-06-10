@@ -1,5 +1,5 @@
 CMakeFiles/set_pose.dir/src/position_pub.cpp.o: \
- /home/proto/Manipulator/DynamixelSDK/motor_setup/src/position_pub.cpp \
+ /home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/position_pub.cpp \
  /usr/include/stdc-predef.h \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal \

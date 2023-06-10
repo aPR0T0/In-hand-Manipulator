@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/proto/Manipulator/DynamixelSDK/motor_setup
+CMAKE_SOURCE_DIR = /home/proto/Manipulator/DynamixelSDK/src/motor_setup
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/proto/Manipulator/DynamixelSDK/build/motor_setup
@@ -70,18 +70,18 @@ include CMakeFiles/init_component.dir/progress.make
 include CMakeFiles/init_component.dir/flags.make
 
 CMakeFiles/init_component.dir/src/init_component.cpp.o: CMakeFiles/init_component.dir/flags.make
-CMakeFiles/init_component.dir/src/init_component.cpp.o: /home/proto/Manipulator/DynamixelSDK/motor_setup/src/init_component.cpp
+CMakeFiles/init_component.dir/src/init_component.cpp.o: /home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/init_component.cpp
 CMakeFiles/init_component.dir/src/init_component.cpp.o: CMakeFiles/init_component.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/proto/Manipulator/DynamixelSDK/build/motor_setup/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/init_component.dir/src/init_component.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/init_component.dir/src/init_component.cpp.o -MF CMakeFiles/init_component.dir/src/init_component.cpp.o.d -o CMakeFiles/init_component.dir/src/init_component.cpp.o -c /home/proto/Manipulator/DynamixelSDK/motor_setup/src/init_component.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/init_component.dir/src/init_component.cpp.o -MF CMakeFiles/init_component.dir/src/init_component.cpp.o.d -o CMakeFiles/init_component.dir/src/init_component.cpp.o -c /home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/init_component.cpp
 
 CMakeFiles/init_component.dir/src/init_component.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/init_component.dir/src/init_component.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/proto/Manipulator/DynamixelSDK/motor_setup/src/init_component.cpp > CMakeFiles/init_component.dir/src/init_component.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/init_component.cpp > CMakeFiles/init_component.dir/src/init_component.cpp.i
 
 CMakeFiles/init_component.dir/src/init_component.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/init_component.dir/src/init_component.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/proto/Manipulator/DynamixelSDK/motor_setup/src/init_component.cpp -o CMakeFiles/init_component.dir/src/init_component.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/init_component.cpp -o CMakeFiles/init_component.dir/src/init_component.cpp.s
 
 # Object files for target init_component
 init_component_OBJECTS = \
@@ -179,6 +179,6 @@ CMakeFiles/init_component.dir/clean:
 .PHONY : CMakeFiles/init_component.dir/clean
 
 CMakeFiles/init_component.dir/depend:
-	cd /home/proto/Manipulator/DynamixelSDK/build/motor_setup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/proto/Manipulator/DynamixelSDK/motor_setup /home/proto/Manipulator/DynamixelSDK/motor_setup /home/proto/Manipulator/DynamixelSDK/build/motor_setup /home/proto/Manipulator/DynamixelSDK/build/motor_setup /home/proto/Manipulator/DynamixelSDK/build/motor_setup/CMakeFiles/init_component.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/proto/Manipulator/DynamixelSDK/build/motor_setup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/proto/Manipulator/DynamixelSDK/src/motor_setup /home/proto/Manipulator/DynamixelSDK/src/motor_setup /home/proto/Manipulator/DynamixelSDK/build/motor_setup /home/proto/Manipulator/DynamixelSDK/build/motor_setup /home/proto/Manipulator/DynamixelSDK/build/motor_setup/CMakeFiles/init_component.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/init_component.dir/depend
 

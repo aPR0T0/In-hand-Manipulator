@@ -290,7 +290,7 @@ dynamixel_sdk_BINARY_DIR:STATIC=/home/proto/Manipulator/DynamixelSDK/build/dynam
 dynamixel_sdk_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-dynamixel_sdk_SOURCE_DIR:STATIC=/home/proto/Manipulator/DynamixelSDK/dynamixel_sdk
+dynamixel_sdk_SOURCE_DIR:STATIC=/home/proto/Manipulator/DynamixelSDK/src/dynamixel_sdk
 
 
 ########################
@@ -377,7 +377,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/proto/Manipulator/DynamixelSDK/dynamixel_sdk
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/proto/Manipulator/DynamixelSDK/src/dynamixel_sdk
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER

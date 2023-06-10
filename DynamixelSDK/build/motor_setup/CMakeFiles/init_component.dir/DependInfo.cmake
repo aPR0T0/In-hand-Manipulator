@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/proto/Manipulator/DynamixelSDK/motor_setup/src/init_component.cpp" "CMakeFiles/init_component.dir/src/init_component.cpp.o" "gcc" "CMakeFiles/init_component.dir/src/init_component.cpp.o.d"
+  "/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/init_component.cpp" "CMakeFiles/init_component.dir/src/init_component.cpp.o" "gcc" "CMakeFiles/init_component.dir/src/init_component.cpp.o.d"
   )
 
 # Targets to which this target links.

@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/proto/Manipulator/DynamixelSDK/motor_setup
+CMAKE_SOURCE_DIR = /home/proto/Manipulator/DynamixelSDK/src/motor_setup
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/proto/Manipulator/DynamixelSDK/build/motor_setup
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/proto/Manipulator/DynamixelSDK/build/motor_setup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/proto/Manipulator/DynamixelSDK/motor_setup /home/proto/Manipulator/DynamixelSDK/motor_setup /home/proto/Manipulator/DynamixelSDK/build/motor_setup /home/proto/Manipulator/DynamixelSDK/build/motor_setup /home/proto/Manipulator/DynamixelSDK/build/motor_setup/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/proto/Manipulator/DynamixelSDK/build/motor_setup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/proto/Manipulator/DynamixelSDK/src/motor_setup /home/proto/Manipulator/DynamixelSDK/src/motor_setup /home/proto/Manipulator/DynamixelSDK/build/motor_setup /home/proto/Manipulator/DynamixelSDK/build/motor_setup /home/proto/Manipulator/DynamixelSDK/build/motor_setup/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 
