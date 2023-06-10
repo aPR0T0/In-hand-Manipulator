@@ -1,0 +1,39 @@
+[35m[1mConsolidate compiler generated dependencies of target set_pose[0m
+[35m[1mConsolidate compiler generated dependencies of target init_component[0m
+[35m[1mConsolidate compiler generated dependencies of target position_torque_control[0m
+[35m[1mConsolidate compiler generated dependencies of target position_control[0m
+[ 25%] Built target set_pose
+[ 37%] [32mBuilding CXX object CMakeFiles/position_torque_control.dir/src/pos_torque_control.cpp.o[0m
+[ 62%] Built target init_component
+[ 87%] Built target position_control
+[100%] [32m[1mLinking CXX shared library libposition_torque_control.so[0m
+[100%] Built target position_torque_control
+-- Install configuration: ""
+-- Installing: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/lib/libinit_component.so
+-- Set runtime path of "/home/proto/Manipulator/DynamixelSDK/install/motor_setup/lib/libinit_component.so" to ""
+-- Installing: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/lib/libposition_control.so
+-- Set runtime path of "/home/proto/Manipulator/DynamixelSDK/install/motor_setup/lib/libposition_control.so" to ""
+-- Installing: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/lib/libposition_torque_control.so
+-- Set runtime path of "/home/proto/Manipulator/DynamixelSDK/install/motor_setup/lib/libposition_torque_control.so" to ""
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/launch
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/launch/init_component.launch.py
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/launch/__pycache__
+-- Installing: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/launch/__pycache__/init_component.launch.cpython-310.pyc
+-- Installing: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/lib/motor_setup/set_pose
+-- Set runtime path of "/home/proto/Manipulator/DynamixelSDK/install/motor_setup/lib/motor_setup/set_pose" to ""
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/ament_index/resource_index/package_run_dependencies/motor_setup
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/ament_index/resource_index/parent_prefix_path/motor_setup
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/environment/ament_prefix_path.sh
+-- Installing: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/environment/path.sh
+-- Installing: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/environment/path.dsv
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/local_setup.bash
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/local_setup.sh
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/local_setup.zsh
+-- Installing: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/local_setup.dsv
+-- Installing: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/package.dsv
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/ament_index/resource_index/packages/motor_setup
+-- Installing: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/ament_index/resource_index/rclcpp_components/motor_setup
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/cmake/motor_setupConfig.cmake
+-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/cmake/motor_setupConfig-version.cmake
+-- Installing: /home/proto/Manipulator/DynamixelSDK/install/motor_setup/share/motor_setup/package.xml

@@ -1,6 +1,0 @@
-{
-    "files.associations": {
-        "*.msg": "cpp",
-        "system_error": "cpp"
-    }
-}

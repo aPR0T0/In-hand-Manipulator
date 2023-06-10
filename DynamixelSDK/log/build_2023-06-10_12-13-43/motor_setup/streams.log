@@ -1,0 +1,205 @@
+[0.007s] Invoking command in '/home/proto/Manipulator/DynamixelSDK/build/motor_setup': AMENT_PREFIX_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/proto/Manipulator/DynamixelSDK/build/motor_setup -- -j8 -l8
+[0.024s] -- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.121s] -- Found rclcpp: 16.0.4 (/opt/ros/humble/share/rclcpp/cmake)
+[0.140s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.142s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.145s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.152s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.168s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.206s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.207s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.291s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.390s] -- Found rclcpp_components: 16.0.4 (/opt/ros/humble/share/rclcpp_components/cmake)
+[0.428s] -- Found composition: 0.20.3 (/opt/ros/humble/share/composition/cmake)
+[0.428s] -- Found dynamixel_sdk: 3.7.40 (/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/cmake)
+[0.429s] -- Found dynamixel_sdk_inf: 3.7.40 (/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake)
+[0.453s] -- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.499s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.500s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.500s] -- Configured cppcheck include dirs: /home/proto/Manipulator/DynamixelSDK/src/motor_setup/include
+[0.500s] -- Configured cppcheck exclude dirs and/or files: 
+[0.501s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.501s] -- Configured cpplint exclude dirs and/or files: 
+[0.501s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.502s] -- Added test 'lint_cmake' to check CMake code style
+[0.502s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.503s] -- Added test 'uncrustify' to check C / C++ code style
+[0.503s] -- Configured uncrustify additional arguments: 
+[0.503s] -- Added test 'xmllint' to check XML markup files
+[0.504s] -- Configuring done
+[0.522s] -- Generating done
+[0.524s] -- Build files have been written to: /home/proto/Manipulator/DynamixelSDK/build/motor_setup
+[0.543s] [35m[1mConsolidate compiler generated dependencies of target set_pose[0m
+[0.543s] [35m[1mConsolidate compiler generated dependencies of target position_control[0m
+[0.543s] [35m[1mConsolidate compiler generated dependencies of target position_torque_control[0m
+[0.543s] [35m[1mConsolidate compiler generated dependencies of target init_component[0m
+[0.556s] [ 25%] [32mBuilding CXX object CMakeFiles/set_pose.dir/src/position_pub.cpp.o[0m
+[0.556s] [ 25%] [32mBuilding CXX object CMakeFiles/init_component.dir/src/init_component.cpp.o[0m
+[0.557s] [ 37%] [32mBuilding CXX object CMakeFiles/position_torque_control.dir/src/pos_torque_control.cpp.o[0m
+[0.561s] [ 50%] [32mBuilding CXX object CMakeFiles/position_control.dir/src/position_control.cpp.o[0m
+[2.458s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/init_component.cpp:[m[K In constructor ‘[01m[Kmotor_setup::SetupDynamixel::SetupDynamixel(const rclcpp::NodeOptions&)[m[K’:
+[2.458s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/init_component.cpp:59:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KQOS_RKL10V[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[2.458s]    59 |   const auto [01;35m[KQOS_RKL10V[m[K =
+[2.458s]       |              [01;35m[K^~~~~~~~~~[m[K
+[2.602s] In file included from [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:1[m[K:
+[2.602s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:26:50:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kusing[m[K’
+[2.602s]    26 |   using SetMode = dynamixel_sdk_inf::srv::SetMode
+[2.603s]       |                                                  [01;31m[K^[m[K
+[2.603s]       |                                                  [32m[K;[m[K
+[2.603s]    27 |   [32m[Kusing[m[K SetTorque = dynamixel_sdk_inf::msg::SetTorque;
+[2.603s]       |   [32m[K~~~~~[m[K                                           
+[2.603s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:34:24:[m[K [01;31m[Kerror: [m[K‘[01m[KSetTorque[m[K’ was not declared in this scope; did you mean ‘[01m[Kdynamixel_sdk_inf::msg::SetTorque[m[K’?
+[2.603s]    34 |   rclcpp::Subscription<[01;31m[KSetTorque[m[K>::SharedPtr set_torque_subscriber_;
+[2.603s]       |                        [01;31m[K^~~~~~~~~[m[K
+[2.603s]       |                        [32m[Kdynamixel_sdk_inf::msg::SetTorque[m[K
+[2.603s] In file included from [01m[K/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/set_torque.hpp:7[m[K,
+[2.603s]                  from [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:12[m[K,
+[2.603s]                  from [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:1[m[K:
+[2.604s] [01m[K/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_torque__struct.hpp:136:7:[m[K [01;36m[Knote: [m[K‘[01m[Kdynamixel_sdk_inf::msg::SetTorque[m[K’ declared here
+[2.604s]   136 | using [01;36m[KSetTorque[m[K =
+[2.604s]       |       [01;36m[K^~~~~~~~~[m[K
+[2.604s] In file included from [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:1[m[K:
+[2.604s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:34:33:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.604s]    34 |   rclcpp::Subscription<SetTorque[01;31m[K>[m[K::SharedPtr set_torque_subscriber_;
+[2.604s]       |                                 [01;31m[K^[m[K
+[2.604s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:34:33:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[2.604s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:34:33:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[2.604s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:34:33:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[2.604s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:34:36:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.604s]    34 |   rclcpp::Subscription<SetTorque>::[01;31m[KSharedPtr[m[K set_torque_subscriber_;
+[2.604s]       |                                    [01;31m[K^~~~~~~~~[m[K
+[2.604s]       |                                             [32m[K;[m[K
+[2.608s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:34:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_torque_subscriber_[m[K’ does not name a type
+[2.608s]    34 |   rclcpp::Subscription<SetTorque>::SharedPtr [01;31m[Kset_torque_subscriber_[m[K;
+[2.608s]       |                                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.636s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:37:19:[m[K [01;31m[Kerror: [m[K‘[01m[KSetMode[m[K’ was not declared in this scope; did you mean ‘[01m[Kdynamixel_sdk_inf::srv::SetMode[m[K’?
+[2.636s]    37 |   rclcpp::Service<[01;31m[KSetMode[m[K>::SharedPtr set_torque_mode_server_;
+[2.636s]       |                   [01;31m[K^~~~~~~[m[K
+[2.636s]       |                   [32m[Kdynamixel_sdk_inf::srv::SetMode[m[K
+[2.637s] In file included from [01m[K/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/set_mode.hpp:7[m[K,
+[2.637s]                  from [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:14[m[K,
+[2.637s]                  from [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:1[m[K:
+[2.637s] [01m[K/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_mode__struct.hpp:251:8:[m[K [01;36m[Knote: [m[K‘[01m[Kdynamixel_sdk_inf::srv::SetMode[m[K’ declared here
+[2.637s]   251 | struct [01;36m[KSetMode[m[K
+[2.637s]       |        [01;36m[K^~~~~~~[m[K
+[2.637s] In file included from [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:1[m[K:
+[2.637s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:37:26:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.637s]    37 |   rclcpp::Service<SetMode[01;31m[K>[m[K::SharedPtr set_torque_mode_server_;
+[2.637s]       |                          [01;31m[K^[m[K
+[2.637s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:37:29:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.637s]    37 |   rclcpp::Service<SetMode>::[01;31m[KSharedPtr[m[K set_torque_mode_server_;
+[2.637s]       |                             [01;31m[K^~~~~~~~~[m[K
+[2.637s]       |                                      [32m[K;[m[K
+[2.638s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:37:29:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint motor_setup::PosTorqueControl::SharedPtr[m[K’
+[2.638s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:34:36:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint motor_setup::PosTorqueControl::SharedPtr[m[K’
+[2.638s]    34 |   rclcpp::Subscription<SetTorque>::[01;36m[KSharedPtr[m[K set_torque_subscriber_;
+[2.638s]       |                                    [01;36m[K^~~~~~~~~[m[K
+[2.640s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:37:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_torque_mode_server_[m[K’ does not name a type
+[2.640s]    37 |   rclcpp::Service<SetMode>::SharedPtr [01;31m[Kset_torque_mode_server_[m[K;
+[2.640s]       |                                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.654s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:[m[K In constructor ‘[01m[Kmotor_setup::PosTorqueControl::PosTorqueControl(const rclcpp::NodeOptions&)[m[K’:
+[2.654s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:96:27:[m[K [01;31m[Kerror: [m[K‘[01m[KSetMode[m[K’ was not declared in this scope; did you mean ‘[01m[Kdynamixel_sdk_inf::srv::SetMode[m[K’?
+[2.654s]    96 |     const std::shared_ptr<[01;31m[KSetMode[m[K::Request> request,
+[2.654s]       |                           [01;31m[K^~~~~~~[m[K
+[2.654s]       |                           [32m[Kdynamixel_sdk_inf::srv::SetMode[m[K
+[2.654s] In file included from [01m[K/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/set_mode.hpp:7[m[K,
+[2.654s]                  from [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:14[m[K,
+[2.654s]                  from [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:1[m[K:
+[2.655s] [01m[K/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_mode__struct.hpp:251:8:[m[K [01;36m[Knote: [m[K‘[01m[Kdynamixel_sdk_inf::srv::SetMode[m[K’ declared here
+[2.655s]   251 | struct [01;36m[KSetMode[m[K
+[2.655s]       |        [01;36m[K^~~~~~~[m[K
+[2.655s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:96:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.655s]    96 |     const std::shared_ptr<SetMode::Request[01;31m[K>[m[K request,
+[2.655s]       |                                           [01;31m[K^[m[K
+[2.655s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:97:21:[m[K [01;31m[Kerror: [m[K‘[01m[KSetMode[m[K’ was not declared in this scope; did you mean ‘[01m[Kdynamixel_sdk_inf::srv::SetMode[m[K’?
+[2.655s]    97 |     std::shared_ptr<[01;31m[KSetMode[m[K::Response> response) -> void
+[2.655s]       |                     [01;31m[K^~~~~~~[m[K
+[2.655s]       |                     [32m[Kdynamixel_sdk_inf::srv::SetMode[m[K
+[2.655s] In file included from [01m[K/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/set_mode.hpp:7[m[K,
+[2.655s]                  from [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:14[m[K,
+[2.655s]                  from [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:1[m[K:
+[2.656s] [01m[K/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_mode__struct.hpp:251:8:[m[K [01;36m[Knote: [m[K‘[01m[Kdynamixel_sdk_inf::srv::SetMode[m[K’ declared here
+[2.656s]   251 | struct [01;36m[KSetMode[m[K
+[2.656s]       |        [01;36m[K^~~~~~~[m[K
+[2.656s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:97:38:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.656s]    97 |     std::shared_ptr<SetMode::Response[01;31m[K>[m[K response) -> void
+[2.656s]       |                                      [01;31m[K^[m[K
+[2.656s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:[m[K In lambda function:
+[2.656s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:99:17:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[2.656s]    99 |         response[01;31m[K->[m[Kset = true;
+[2.656s]       |                 [01;31m[K^~[m[K
+[2.656s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:100:36:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[2.656s]   100 |         for (uint8_t m_id : request[01;31m[K->[m[Kmotor_ids) {
+[2.656s]       |                                    [01;31m[K^~[m[K
+[2.657s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:111:25:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[2.657s]   111 |                 response[01;31m[K->[m[Kset = false;
+[2.657s]       |                         [01;31m[K^~[m[K
+[2.665s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:[m[K In constructor ‘[01m[Kmotor_setup::PosTorqueControl::PosTorqueControl(const rclcpp::NodeOptions&)[m[K’:
+[2.665s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:119:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_torque_mode_server_[m[K’ was not declared in this scope
+[2.665s]   119 |   [01;31m[Kset_torque_mode_server_[m[K = create_service<SetMode>("set_mode", set_torque_control_mode);
+[2.665s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.666s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:119:44:[m[K [01;31m[Kerror: [m[K‘[01m[KSetMode[m[K’ was not declared in this scope; did you mean ‘[01m[Kdynamixel_sdk_inf::srv::SetMode[m[K’?
+[2.666s]   119 |   set_torque_mode_server_ = create_service<[01;31m[KSetMode[m[K>("set_mode", set_torque_control_mode);
+[2.666s]       |                                            [01;31m[K^~~~~~~[m[K
+[2.666s]       |                                            [32m[Kdynamixel_sdk_inf::srv::SetMode[m[K
+[2.666s] In file included from [01m[K/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/set_mode.hpp:7[m[K,
+[2.666s]                  from [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:14[m[K,
+[2.667s]                  from [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:1[m[K:
+[2.667s] [01m[K/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_mode__struct.hpp:251:8:[m[K [01;36m[Knote: [m[K‘[01m[Kdynamixel_sdk_inf::srv::SetMode[m[K’ declared here
+[2.667s]   251 | struct [01;36m[KSetMode[m[K
+[2.667s]       |        [01;36m[K^~~~~~~[m[K
+[2.667s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:119:52:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmotor_setup::PosTorqueControl::create_service<<expression error> >(const char [9], motor_setup::PosTorqueControl::PosTorqueControl(const rclcpp::NodeOptions&)::<lambda(int, int)>&)[m[K’
+[2.667s]   119 |   set_torque_mode_server_ = [01;31m[Kcreate_service<SetMode>("set_mode", set_torque_control_mode)[m[K;
+[2.667s]       |                             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.667s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+[2.667s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[2.667s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[2.667s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.667s]                  from [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:8[m[K,
+[2.667s]                  from [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:1[m[K:
+[2.667s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:141:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ServiceT, class CallbackT> typename rclcpp::Service<ServiceT>::SharedPtr rclcpp::Node::create_service(const string&, CallbackT&&, const rmw_qos_profile_t&, rclcpp::CallbackGroup::SharedPtr)[m[K’
+[2.667s]   141 | [01;36m[KNode[m[K::create_service(
+[2.668s]       | [01;36m[K^~~~[m[K
+[2.668s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:141:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.668s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:119:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.668s]   119 |   set_torque_mode_server_ = [01;31m[Kcreate_service<SetMode>("set_mode", set_torque_control_mode)[m[K;
+[2.668s]       |                             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.682s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:150:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_torque_subscriber_[m[K’ was not declared in this scope
+[2.682s]   150 |     [01;31m[Kset_torque_subscriber_[m[K =
+[2.682s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.683s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:151:33:[m[K [01;31m[Kerror: [m[K‘[01m[KSetTorque[m[K’ was not declared in this scope; did you mean ‘[01m[Kdynamixel_sdk_inf::msg::SetTorque[m[K’?
+[2.683s]   151 |       this->create_subscription<[01;31m[KSetTorque[m[K>(
+[2.683s]       |                                 [01;31m[K^~~~~~~~~[m[K
+[2.683s]       |                                 [32m[Kdynamixel_sdk_inf::msg::SetTorque[m[K
+[2.683s] In file included from [01m[K/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/set_torque.hpp:7[m[K,
+[2.683s]                  from [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:12[m[K,
+[2.683s]                  from [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:1[m[K:
+[2.683s] [01m[K/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_torque__struct.hpp:136:7:[m[K [01;36m[Knote: [m[K‘[01m[Kdynamixel_sdk_inf::msg::SetTorque[m[K’ declared here
+[2.683s]   136 | using [01;36m[KSetTorque[m[K =
+[2.683s]       |       [01;36m[K^~~~~~~~~[m[K
+[2.684s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:154:20:[m[K [01;31m[Kerror: [m[K‘[01m[KSetTorque[m[K’ does not name a type
+[2.684s]   154 |       [this](const [01;31m[KSetTorque[m[K::SharedPtr msg) -> void
+[2.684s]       |                    [01;31m[K^~~~~~~~~[m[K
+[2.684s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:[m[K In lambda function:
+[2.685s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:181:6:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K;[m[K’ token
+[2.685s]   181 |     )[01;31m[K;[m[K
+[2.685s]       |      [01;31m[K^[m[K
+[2.685s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:[m[K In constructor ‘[01m[Kmotor_setup::PosTorqueControl::PosTorqueControl(const rclcpp::NodeOptions&)[m[K’:
+[2.685s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:181:6:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[2.685s]   181 |     )[01;31m[K;[m[K
+[2.685s]       |      [01;31m[K^[m[K
+[2.685s]       |      [32m[K)[m[K
+[2.685s] [01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:151:43:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[2.685s]   151 |       this->create_subscription<SetTorque>[01;36m[K([m[K
+[2.685s]       |                                           [01;36m[K^[m[K
+[3.330s] gmake[2]: *** [CMakeFiles/position_torque_control.dir/build.make:76: CMakeFiles/position_torque_control.dir/src/pos_torque_control.cpp.o] Error 1
+[3.330s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/position_torque_control.dir/all] Error 2
+[3.330s] gmake[1]: *** Waiting for unfinished jobs....
+[3.472s] [ 62%] [32m[1mLinking CXX shared library libinit_component.so[0m
+[3.597s] [ 62%] Built target init_component
+[4.297s] [ 75%] [32m[1mLinking CXX executable set_pose[0m
+[4.471s] [ 75%] Built target set_pose
+[8.033s] [ 87%] [32m[1mLinking CXX shared library libposition_control.so[0m
+[8.394s] [ 87%] Built target position_control
+[8.395s] gmake: *** [Makefile:146: all] Error 2
+[8.396s] Invoked command in '/home/proto/Manipulator/DynamixelSDK/build/motor_setup' returned '2': AMENT_PREFIX_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/proto/Manipulator/DynamixelSDK/build/motor_setup -- -j8 -l8

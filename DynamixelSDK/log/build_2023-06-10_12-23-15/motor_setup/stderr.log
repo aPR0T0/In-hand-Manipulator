@@ -1,0 +1,11 @@
+[01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:[m[K In lambda function:
+[01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:160:1:[m[K [01;31m[Kerror: [m[K‘[01m[KIf[m[K’ was not declared in this scope
+  160 | [01;31m[KIf[m[K you use a value between 0 ~ 1,023, torque is applied to the CCW direction, and setting it to 0 will stops.
+      | [01;31m[K^~[m[K
+[01m[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:171:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_torque[m[K’ was not declared in this scope; did you mean ‘[01m[Kaddr_goal_torque[m[K’?
+  171 |           [01;31m[Kgoal_torque[m[K,
+      |           [01;31m[K^~~~~~~~~~~[m[K
+      |           [32m[Kaddr_goal_torque[m[K
+gmake[2]: *** [CMakeFiles/position_torque_control.dir/build.make:76: CMakeFiles/position_torque_control.dir/src/pos_torque_control.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/position_torque_control.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

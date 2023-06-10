@@ -1,0 +1,777 @@
+[0.000000] (-) TimerEvent: {}
+[0.000932] (dynamixel_sdk) JobQueued: {'identifier': 'dynamixel_sdk', 'dependencies': OrderedDict()}
+[0.000961] (dynamixel_sdk_inf) JobQueued: {'identifier': 'dynamixel_sdk_inf', 'dependencies': OrderedDict()}
+[0.000976] (motor_setup) JobQueued: {'identifier': 'motor_setup', 'dependencies': OrderedDict([('dynamixel_sdk', '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk'), ('dynamixel_sdk_inf', '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf')])}
+[0.000991] (dynamixel_sdk) JobStarted: {'identifier': 'dynamixel_sdk'}
+[0.007432] (dynamixel_sdk_inf) JobStarted: {'identifier': 'dynamixel_sdk_inf'}
+[0.011210] (dynamixel_sdk) JobProgress: {'identifier': 'dynamixel_sdk', 'progress': 'cmake'}
+[0.011608] (dynamixel_sdk) JobProgress: {'identifier': 'dynamixel_sdk', 'progress': 'build'}
+[0.012027] (dynamixel_sdk) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk', '--', '-j8', '-l8'], 'cwd': '/home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'proto'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/proto'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/proto/Manipulator'), ('DESKTOP_SESSION', 'pop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'pop'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '5945'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('MANDATORY_PATH', '/usr/share/gconf/pop.mandatory.path'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'proto'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/pop.default.path'), ('USERNAME', 'proto'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/proto/mambaforge/condabin:/home/proto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/pop-os:@/tmp/.ICE-unix/2378,unix/pop-os:/tmp/.ICE-unix/2378'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/80104b62_beff_4b2d_a31f_9f02fdb68c2c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'pop:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'pop'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '50'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/proto/mambaforge/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'pop'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-pop:/etc/xdg'), ('CONDA_EXE', '/home/proto/mambaforge/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/pop:/usr/share/gnome:/home/proto/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.014412] (dynamixel_sdk_inf) JobProgress: {'identifier': 'dynamixel_sdk_inf', 'progress': 'cmake'}
+[0.014757] (dynamixel_sdk_inf) JobProgress: {'identifier': 'dynamixel_sdk_inf', 'progress': 'build'}
+[0.014992] (dynamixel_sdk_inf) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf', '--', '-j8', '-l8'], 'cwd': '/home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'proto'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/proto'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/proto/Manipulator'), ('DESKTOP_SESSION', 'pop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'pop'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '5945'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('MANDATORY_PATH', '/usr/share/gconf/pop.mandatory.path'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'proto'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/pop.default.path'), ('USERNAME', 'proto'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/proto/mambaforge/condabin:/home/proto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/pop-os:@/tmp/.ICE-unix/2378,unix/pop-os:/tmp/.ICE-unix/2378'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/80104b62_beff_4b2d_a31f_9f02fdb68c2c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'pop:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'pop'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '50'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/proto/mambaforge/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'pop'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-pop:/etc/xdg'), ('CONDA_EXE', '/home/proto/mambaforge/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/pop:/usr/share/gnome:/home/proto/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.033809] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.046536] (dynamixel_sdk) StdoutLine: {'line': b'[100%] Built target dynamixel_sdk\n'}
+[0.053789] (dynamixel_sdk) CommandEnded: {'returncode': 0}
+[0.079202] (dynamixel_sdk) JobProgress: {'identifier': 'dynamixel_sdk', 'progress': 'install'}
+[0.085107] (dynamixel_sdk) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk'], 'cwd': '/home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'proto'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/proto'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/proto/Manipulator'), ('DESKTOP_SESSION', 'pop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'pop'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '5945'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('MANDATORY_PATH', '/usr/share/gconf/pop.mandatory.path'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'proto'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/pop.default.path'), ('USERNAME', 'proto'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/proto/mambaforge/condabin:/home/proto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/pop-os:@/tmp/.ICE-unix/2378,unix/pop-os:/tmp/.ICE-unix/2378'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/80104b62_beff_4b2d_a31f_9f02fdb68c2c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'pop:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'pop'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '50'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/proto/mambaforge/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'pop'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-pop:/etc/xdg'), ('CONDA_EXE', '/home/proto/mambaforge/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/pop:/usr/share/gnome:/home/proto/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.090920] (dynamixel_sdk) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.091178] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/include/\n'}
+[0.091323] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/include//dynamixel_sdk\n'}
+[0.091433] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/include//dynamixel_sdk/protocol2_packet_handler.h\n'}
+[0.091507] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/include//dynamixel_sdk/protocol1_packet_handler.h\n'}
+[0.091628] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/include//dynamixel_sdk/group_sync_write.h\n'}
+[0.091696] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/include//dynamixel_sdk/packet_handler.h\n'}
+[0.091760] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/include//dynamixel_sdk/dynamixel_sdk.h\n'}
+[0.091827] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/include//dynamixel_sdk/port_handler.h\n'}
+[0.091899] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/include//dynamixel_sdk/group_bulk_read.h\n'}
+[0.091971] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/include//dynamixel_sdk/group_sync_read.h\n'}
+[0.092035] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_arduino.h\n'}
+[0.092101] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_windows.h\n'}
+[0.092165] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_linux.h\n'}
+[0.092228] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/include//dynamixel_sdk/group_bulk_write.h\n'}
+[0.092294] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_mac.h\n'}
+[0.092360] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/lib/libdynamixel_sdk.so\n'}
+[0.092423] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/environment/library_path.sh\n'}
+[0.092488] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/environment/library_path.dsv\n'}
+[0.092715] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk\n'}
+[0.093528] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk\n'}
+[0.093699] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/environment/ament_prefix_path.sh\n'}
+[0.094481] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/environment/ament_prefix_path.dsv\n'}
+[0.094616] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/environment/path.sh\n'}
+[0.094799] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/environment/path.dsv\n'}
+[0.095470] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.bash\n'}
+[0.095604] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.sh\n'}
+[0.095722] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.zsh\n'}
+[0.095884] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.dsv\n'}
+[0.096012] (dynamixel_sdk) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/package.dsv\n'}
+[0.096675] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/ament_index/resource_index/packages/dynamixel_sdk\n'}
+[0.096824] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.096954] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.097077] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkConfig.cmake\n'}
+[0.097202] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkConfig-version.cmake\n'}
+[0.097565] (dynamixel_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/package.xml\n'}
+[0.097816] (dynamixel_sdk) CommandEnded: {'returncode': 0}
+[0.100711] (-) TimerEvent: {}
+[0.140117] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[0.145391] (dynamixel_sdk) JobEnded: {'identifier': 'dynamixel_sdk', 'rc': 0}
+[0.158746] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.160388] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.164304] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.171197] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.180935] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.189534] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.200800] (-) TimerEvent: {}
+[0.301065] (-) TimerEvent: {}
+[0.376814] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.401190] (-) TimerEvent: {}
+[0.501532] (-) TimerEvent: {}
+[0.585799] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.601698] (-) TimerEvent: {}
+[0.664590] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.679627] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[0.694126] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3.6\n'}
+[0.694314] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[0.694395] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[0.701873] (-) TimerEvent: {}
+[0.704617] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.725994] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Generating done\n'}
+[0.728385] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Build files have been written to: /home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf\n'}
+[0.748002] (dynamixel_sdk_inf) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[0.755245] (dynamixel_sdk_inf) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[0.761340] (dynamixel_sdk_inf) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_copy_dynamixel_sdk_inf\n'}
+[0.801977] (-) TimerEvent: {}
+[0.902327] (-) TimerEvent: {}
+[0.947735] (dynamixel_sdk_inf) StdoutLine: {'line': b'running egg_info\n'}
+[0.948493] (dynamixel_sdk_inf) StdoutLine: {'line': b'writing dynamixel_sdk_inf.egg-info/PKG-INFO\n'}
+[0.948687] (dynamixel_sdk_inf) StdoutLine: {'line': b'writing dependency_links to dynamixel_sdk_inf.egg-info/dependency_links.txt\n'}
+[0.948791] (dynamixel_sdk_inf) StdoutLine: {'line': b'writing top-level names to dynamixel_sdk_inf.egg-info/top_level.txt\n'}
+[0.950383] (dynamixel_sdk_inf) StdoutLine: {'line': b"reading manifest file 'dynamixel_sdk_inf.egg-info/SOURCES.txt'\n"}
+[0.950790] (dynamixel_sdk_inf) StdoutLine: {'line': b"writing manifest file 'dynamixel_sdk_inf.egg-info/SOURCES.txt'\n"}
+[0.971041] (dynamixel_sdk_inf) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_build_dynamixel_sdk_inf_egg\n'}
+[1.002412] (-) TimerEvent: {}
+[1.102635] (-) TimerEvent: {}
+[1.201023] (dynamixel_sdk_inf) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target dynamixel_sdk_inf__rosidl_generator_c\x1b[0m\n'}
+[1.202719] (-) TimerEvent: {}
+[1.210619] (dynamixel_sdk_inf) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_inf__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_inf/srv/detail/set_mode__functions.c.o\x1b[0m\n'}
+[1.211369] (dynamixel_sdk_inf) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_inf__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_inf/msg/detail/set_torque__functions.c.o\x1b[0m\n'}
+[1.211542] (dynamixel_sdk_inf) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_inf__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_inf/srv/detail/set_id__functions.c.o\x1b[0m\n'}
+[1.211618] (dynamixel_sdk_inf) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_inf__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_inf/srv/detail/get_position__functions.c.o\x1b[0m\n'}
+[1.213389] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_inf__rosidl_generator_c.dir/rosidl_generator_c/dynamixel_sdk_inf/msg/detail/set_position__functions.c.o\x1b[0m\n'}
+[1.274393] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 11%] Built target dynamixel_sdk_inf__cpp\n'}
+[1.280233] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 12%] \x1b[32m\x1b[1mLinking C shared library libdynamixel_sdk_inf__rosidl_generator_c.so\x1b[0m\n'}
+[1.282273] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.282467] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.282718] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.302837] (-) TimerEvent: {}
+[1.319812] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 17%] Built target dynamixel_sdk_inf__rosidl_generator_c\n'}
+[1.330226] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.330714] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.331025] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 22%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.403980] (-) TimerEvent: {}
+[1.504298] (-) TimerEvent: {}
+[1.604568] (-) TimerEvent: {}
+[1.665325] (dynamixel_sdk_inf) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target dynamixel_sdk_inf__rosidl_typesupport_cpp\x1b[0m\n'}
+[1.681315] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_inf/msg/set_position__type_support.cpp.o\x1b[0m\n'}
+[1.684627] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_inf/srv/get_position__type_support.cpp.o\x1b[0m\n'}
+[1.689103] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_inf/msg/set_torque__type_support.cpp.o\x1b[0m\n'}
+[1.708004] (-) TimerEvent: {}
+[1.812031] (-) TimerEvent: {}
+[1.916000] (-) TimerEvent: {}
+[1.931884] (dynamixel_sdk_inf) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target dynamixel_sdk_inf__rosidl_typesupport_c\x1b[0m\n'}
+[2.016237] (-) TimerEvent: {}
+[2.097719] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_c.dir/rosidl_typesupport_c/dynamixel_sdk_inf/msg/set_position__type_support.cpp.o\x1b[0m\n'}
+[2.116513] (-) TimerEvent: {}
+[2.167778] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_c.dir/rosidl_typesupport_c/dynamixel_sdk_inf/msg/set_torque__type_support.cpp.o\x1b[0m\n'}
+[2.216626] (-) TimerEvent: {}
+[2.236007] (dynamixel_sdk_inf) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target dynamixel_sdk_inf__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[2.246095] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_c.dir/rosidl_typesupport_c/dynamixel_sdk_inf/srv/get_position__type_support.cpp.o\x1b[0m\n'}
+[2.266452] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dynamixel_sdk_inf/msg/detail/set_position__type_support.cpp.o\x1b[0m\n'}
+[2.278308] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_inf/srv/set_mode__type_support.cpp.o\x1b[0m\n'}
+[2.284215] (dynamixel_sdk_inf) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target dynamixel_sdk_inf__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[2.317726] (-) TimerEvent: {}
+[2.318879] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_c.dir/rosidl_typesupport_c/dynamixel_sdk_inf/srv/set_mode__type_support.cpp.o\x1b[0m\n'}
+[2.322328] (dynamixel_sdk_inf) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target dynamixel_sdk_inf__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[2.331648] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dynamixel_sdk_inf/srv/set_id__type_support.cpp.o\x1b[0m\n'}
+[2.345488] (dynamixel_sdk_inf) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target dynamixel_sdk_inf__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[2.347153] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_c.dir/rosidl_typesupport_c/dynamixel_sdk_inf/srv/set_id__type_support.cpp.o\x1b[0m\n'}
+[2.358673] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynamixel_sdk_inf/msg/detail/set_position__type_support.c.o\x1b[0m\n'}
+[2.359710] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_inf/msg/detail/dds_fastrtps/set_position__type_support.cpp.o\x1b[0m\n'}
+[2.379771] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dynamixel_sdk_inf/msg/detail/set_position__type_support_c.cpp.o\x1b[0m\n'}
+[2.400035] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynamixel_sdk_inf/msg/detail/set_torque__type_support.c.o\x1b[0m\n'}
+[2.420191] (-) TimerEvent: {}
+[2.433234] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 47%] \x1b[32m\x1b[1mLinking CXX shared library libdynamixel_sdk_inf__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.438939] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynamixel_sdk_inf/srv/detail/get_position__type_support.c.o\x1b[0m\n'}
+[2.508446] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynamixel_sdk_inf/srv/detail/set_mode__type_support.c.o\x1b[0m\n'}
+[2.508763] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dynamixel_sdk_inf/srv/detail/set_id__type_support.c.o\x1b[0m\n'}
+[2.519456] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 52%] Built target dynamixel_sdk_inf__rosidl_typesupport_c\n'}
+[2.523993] (-) TimerEvent: {}
+[2.543511] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dynamixel_sdk_inf/msg/detail/set_torque__type_support_c.cpp.o\x1b[0m\n'}
+[2.624128] (-) TimerEvent: {}
+[2.653192] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dynamixel_sdk_inf/srv/detail/get_position__type_support_c.cpp.o\x1b[0m\n'}
+[2.723879] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking C shared library libdynamixel_sdk_inf__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.724205] (-) TimerEvent: {}
+[2.828015] (-) TimerEvent: {}
+[2.917793] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dynamixel_sdk_inf/srv/detail/set_mode__type_support_c.cpp.o\x1b[0m\n'}
+[2.928145] (-) TimerEvent: {}
+[2.987039] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX shared library libdynamixel_sdk_inf__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.030515] (-) TimerEvent: {}
+[3.050937] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 60%] Built target dynamixel_sdk_inf__rosidl_typesupport_introspection_c\n'}
+[3.070241] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dynamixel_sdk_inf/srv/detail/set_id__type_support_c.cpp.o\x1b[0m\n'}
+[3.133395] (-) TimerEvent: {}
+[3.153799] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dynamixel_sdk_inf/msg/detail/set_torque__type_support.cpp.o\x1b[0m\n'}
+[3.173580] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_inf/msg/detail/dds_fastrtps/set_torque__type_support.cpp.o\x1b[0m\n'}
+[3.181761] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_inf/srv/detail/dds_fastrtps/get_position__type_support.cpp.o\x1b[0m\n'}
+[3.190337] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 66%] Built target dynamixel_sdk_inf__rosidl_typesupport_cpp\n'}
+[3.207100] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dynamixel_sdk_inf/srv/detail/get_position__type_support.cpp.o\x1b[0m\n'}
+[3.236016] (-) TimerEvent: {}
+[3.292768] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dynamixel_sdk_inf/srv/detail/set_mode__type_support.cpp.o\x1b[0m\n'}
+[3.339622] (-) TimerEvent: {}
+[3.438642] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dynamixel_sdk_inf/srv/detail/set_id__type_support.cpp.o\x1b[0m\n'}
+[3.444025] (-) TimerEvent: {}
+[3.548023] (-) TimerEvent: {}
+[3.652031] (-) TimerEvent: {}
+[3.752533] (-) TimerEvent: {}
+[3.855208] (-) TimerEvent: {}
+[3.900800] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_inf/srv/detail/dds_fastrtps/set_mode__type_support.cpp.o\x1b[0m\n'}
+[3.955342] (-) TimerEvent: {}
+[3.960645] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libdynamixel_sdk_inf__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[4.055495] (-) TimerEvent: {}
+[4.145027] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 74%] Built target dynamixel_sdk_inf__rosidl_typesupport_fastrtps_c\n'}
+[4.156098] (-) TimerEvent: {}
+[4.160333] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dynamixel_sdk_inf/srv/detail/dds_fastrtps/set_id__type_support.cpp.o\x1b[0m\n'}
+[4.256282] (-) TimerEvent: {}
+[4.356696] (-) TimerEvent: {}
+[4.457135] (-) TimerEvent: {}
+[4.516700] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libdynamixel_sdk_inf__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.557257] (-) TimerEvent: {}
+[4.637567] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 77%] Built target dynamixel_sdk_inf__rosidl_typesupport_introspection_cpp\n'}
+[4.657406] (-) TimerEvent: {}
+[4.757979] (-) TimerEvent: {}
+[4.858426] (-) TimerEvent: {}
+[4.863543] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libdynamixel_sdk_inf__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.930414] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 79%] Built target dynamixel_sdk_inf__rosidl_typesupport_fastrtps_cpp\n'}
+[4.944080] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 79%] Built target dynamixel_sdk_inf\n'}
+[4.958544] (-) TimerEvent: {}
+[4.960250] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[5.058668] (-) TimerEvent: {}
+[5.159147] (-) TimerEvent: {}
+[5.259638] (-) TimerEvent: {}
+[5.359954] (-) TimerEvent: {}
+[5.460184] (-) TimerEvent: {}
+[5.560417] (-) TimerEvent: {}
+[5.565505] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 80%] Built target dynamixel_sdk_inf__py\n'}
+[5.572410] (dynamixel_sdk_inf) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target dynamixel_sdk_inf__rosidl_generator_py\x1b[0m\n'}
+[5.582791] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_inf__rosidl_generator_py.dir/rosidl_generator_py/dynamixel_sdk_inf/srv/_set_mode_s.c.o\x1b[0m\n'}
+[5.582996] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_inf__rosidl_generator_py.dir/rosidl_generator_py/dynamixel_sdk_inf/msg/_set_torque_s.c.o\x1b[0m\n'}
+[5.583062] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_inf__rosidl_generator_py.dir/rosidl_generator_py/dynamixel_sdk_inf/srv/_set_id_s.c.o\x1b[0m\n'}
+[5.583734] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_inf__rosidl_generator_py.dir/rosidl_generator_py/dynamixel_sdk_inf/msg/_set_position_s.c.o\x1b[0m\n'}
+[5.583983] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_inf__rosidl_generator_py.dir/rosidl_generator_py/dynamixel_sdk_inf/srv/_get_position_s.c.o\x1b[0m\n'}
+[5.660537] (-) TimerEvent: {}
+[5.691302] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/dynamixel_sdk_inf/libdynamixel_sdk_inf__rosidl_generator_py.so\x1b[0m\n'}
+[5.719833] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 90%] Built target dynamixel_sdk_inf__rosidl_generator_py\n'}
+[5.727457] (dynamixel_sdk_inf) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target dynamixel_sdk_inf__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[5.727767] (dynamixel_sdk_inf) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target dynamixel_sdk_inf__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[5.727848] (dynamixel_sdk_inf) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target dynamixel_sdk_inf__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[5.736519] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/dynamixel_sdk_inf/_dynamixel_sdk_inf_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[5.736715] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/dynamixel_sdk_inf/_dynamixel_sdk_inf_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[5.736782] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/dynamixel_sdk_inf__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/dynamixel_sdk_inf/_dynamixel_sdk_inf_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[5.760646] (-) TimerEvent: {}
+[5.818553] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/dynamixel_sdk_inf/dynamixel_sdk_inf_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.818783] (dynamixel_sdk_inf) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/dynamixel_sdk_inf/dynamixel_sdk_inf_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.824395] (dynamixel_sdk_inf) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/dynamixel_sdk_inf/dynamixel_sdk_inf_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.843222] (dynamixel_sdk_inf) StdoutLine: {'line': b'[100%] Built target dynamixel_sdk_inf__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.843427] (dynamixel_sdk_inf) StdoutLine: {'line': b'[100%] Built target dynamixel_sdk_inf__rosidl_typesupport_introspection_c__pyext\n'}
+[5.850494] (dynamixel_sdk_inf) StdoutLine: {'line': b'[100%] Built target dynamixel_sdk_inf__rosidl_typesupport_c__pyext\n'}
+[5.859132] (dynamixel_sdk_inf) CommandEnded: {'returncode': 0}
+[5.860725] (-) TimerEvent: {}
+[5.932599] (dynamixel_sdk_inf) JobProgress: {'identifier': 'dynamixel_sdk_inf', 'progress': 'install'}
+[5.932756] (dynamixel_sdk_inf) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf'], 'cwd': '/home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'proto'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/proto'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/proto/Manipulator'), ('DESKTOP_SESSION', 'pop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'pop'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '5945'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('MANDATORY_PATH', '/usr/share/gconf/pop.mandatory.path'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'proto'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/pop.default.path'), ('USERNAME', 'proto'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/proto/mambaforge/condabin:/home/proto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/pop-os:@/tmp/.ICE-unix/2378,unix/pop-os:/tmp/.ICE-unix/2378'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/80104b62_beff_4b2d_a31f_9f02fdb68c2c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'pop:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'pop'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '50'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/proto/mambaforge/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'pop'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/proto/Manipulator/DynamixelSDK/build/dynamixel_sdk_inf'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-pop:/etc/xdg'), ('CONDA_EXE', '/home/proto/mambaforge/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/pop:/usr/share/gnome:/home/proto/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[5.938413] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.938529] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/ament_index/resource_index/rosidl_interfaces/dynamixel_sdk_inf\n'}
+[5.938600] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf\n'}
+[5.938668] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv\n'}
+[5.938728] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/get_position.h\n'}
+[5.938770] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/get_torquectrl.h\n'}
+[5.938826] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail\n'}
+[5.938866] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_position__functions.c\n'}
+[5.938915] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_id__functions.c\n'}
+[5.938967] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_mode__functions.h\n'}
+[5.939012] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_id__functions.h\n'}
+[5.939053] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_position__type_support.h\n'}
+[5.939107] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_position__functions.h\n'}
+[5.939160] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_mode__functions.c\n'}
+[5.939216] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_torquectrl__functions.h\n'}
+[5.939257] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_id__struct.h\n'}
+[5.939323] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_torquectrl__struct.h\n'}
+[5.939363] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_id__type_support.h\n'}
+[5.939404] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_mode__struct.h\n'}
+[5.939457] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_torquectrl__type_support.h\n'}
+[5.939496] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_torquectrl__functions.c\n'}
+[5.939550] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_mode__type_support.h\n'}
+[5.939591] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_position__struct.h\n'}
+[5.939660] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/set_mode.h\n'}
+[5.939710] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/set_id.h\n'}
+[5.939750] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg\n'}
+[5.939792] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail\n'}
+[5.939854] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_position__type_support.h\n'}
+[5.939904] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_torque__struct.h\n'}
+[5.939969] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_position__struct.h\n'}
+[5.940014] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_position__functions.c\n'}
+[5.940053] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_position__functions.h\n'}
+[5.940212] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_torque__type_support.h\n'}
+[5.940271] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_torque__functions.h\n'}
+[5.940331] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_torque__functions.c\n'}
+[5.940391] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/set_torque.h\n'}
+[5.940447] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/set_position.h\n'}
+[5.940504] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.940559] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/environment/library_path.sh\n'}
+[5.940610] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/environment/library_path.dsv\n'}
+[5.940716] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib/libdynamixel_sdk_inf__rosidl_generator_c.so\n'}
+[5.940991] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Set runtime path of "/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib/libdynamixel_sdk_inf__rosidl_generator_c.so" to ""\n'}
+[5.941065] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf\n'}
+[5.941126] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv\n'}
+[5.941187] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail\n'}
+[5.941227] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_position__rosidl_typesupport_fastrtps_c.h\n'}
+[5.941286] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_id__rosidl_typesupport_fastrtps_c.h\n'}
+[5.941364] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_mode__rosidl_typesupport_fastrtps_c.h\n'}
+[5.941416] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_torquectrl__rosidl_typesupport_fastrtps_c.h\n'}
+[5.941459] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg\n'}
+[5.941498] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail\n'}
+[5.941540] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_position__rosidl_typesupport_fastrtps_c.h\n'}
+[5.941581] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_torque__rosidl_typesupport_fastrtps_c.h\n'}
+[5.941636] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.941695] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib/libdynamixel_sdk_inf__rosidl_typesupport_fastrtps_c.so\n'}
+[5.941765] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Set runtime path of "/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib/libdynamixel_sdk_inf__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[5.941903] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf\n'}
+[5.941972] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv\n'}
+[5.942047] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/get_position.hpp\n'}
+[5.942098] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/set_id.hpp\n'}
+[5.942154] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail\n'}
+[5.942209] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_torquectrl__traits.hpp\n'}
+[5.942266] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_position__traits.hpp\n'}
+[5.942333] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_id__traits.hpp\n'}
+[5.942396] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_id__builder.hpp\n'}
+[5.942446] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_position__struct.hpp\n'}
+[5.942509] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_torquectrl__builder.hpp\n'}
+[5.942566] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_id__struct.hpp\n'}
+[5.942631] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_torquectrl__struct.hpp\n'}
+[5.942697] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_position__builder.hpp\n'}
+[5.942760] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_mode__struct.hpp\n'}
+[5.942820] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_mode__builder.hpp\n'}
+[5.942876] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_mode__traits.hpp\n'}
+[5.942933] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/set_mode.hpp\n'}
+[5.942996] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/get_torquectrl.hpp\n'}
+[5.943048] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg\n'}
+[5.943102] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/set_torque.hpp\n'}
+[5.943144] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail\n'}
+[5.943219] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_torque__builder.hpp\n'}
+[5.943272] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_torque__traits.hpp\n'}
+[5.943329] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_torque__struct.hpp\n'}
+[5.943385] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_position__builder.hpp\n'}
+[5.943456] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_position__traits.hpp\n'}
+[5.943516] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_position__struct.hpp\n'}
+[5.943580] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/set_position.hpp\n'}
+[5.943636] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf\n'}
+[5.943677] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv\n'}
+[5.943730] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail\n'}
+[5.943767] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_position__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.943806] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_id__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.943844] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_mode__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.943881] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_torquectrl__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.943931] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/dds_fastrtps\n'}
+[5.944021] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg\n'}
+[5.944081] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail\n'}
+[5.944123] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_position__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.944184] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/dds_fastrtps\n'}
+[5.944240] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_torque__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.944284] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.944346] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib/libdynamixel_sdk_inf__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.944405] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Set runtime path of "/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib/libdynamixel_sdk_inf__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[5.944458] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf\n'}
+[5.944546] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv\n'}
+[5.944598] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail\n'}
+[5.944640] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_torquectrl__rosidl_typesupport_introspection_c.h\n'}
+[5.944697] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_id__type_support.c\n'}
+[5.944757] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_torquectrl__type_support.c\n'}
+[5.944798] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_position__type_support.c\n'}
+[5.944837] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_mode__type_support.c\n'}
+[5.944889] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_position__rosidl_typesupport_introspection_c.h\n'}
+[5.944933] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_id__rosidl_typesupport_introspection_c.h\n'}
+[5.944974] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_mode__rosidl_typesupport_introspection_c.h\n'}
+[5.945011] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg\n'}
+[5.945048] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.945084] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail\n'}
+[5.945142] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_torque__rosidl_typesupport_introspection_c.h\n'}
+[5.945182] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_position__type_support.c\n'}
+[5.945235] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_torque__type_support.c\n'}
+[5.945273] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_position__rosidl_typesupport_introspection_c.h\n'}
+[5.945311] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib/libdynamixel_sdk_inf__rosidl_typesupport_introspection_c.so\n'}
+[5.945348] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Set runtime path of "/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib/libdynamixel_sdk_inf__rosidl_typesupport_introspection_c.so" to ""\n'}
+[5.945432] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib/libdynamixel_sdk_inf__rosidl_typesupport_c.so\n'}
+[5.945490] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Set runtime path of "/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib/libdynamixel_sdk_inf__rosidl_typesupport_c.so" to ""\n'}
+[5.945550] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf\n'}
+[5.945594] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv\n'}
+[5.945658] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail\n'}
+[5.945715] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_position__type_support.cpp\n'}
+[5.945773] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_torquectrl__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.945827] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_position__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.945868] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/get_torquectrl__type_support.cpp\n'}
+[5.945940] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_mode__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.945981] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_mode__type_support.cpp\n'}
+[5.946034] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_id__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.946088] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_id__type_support.cpp\n'}
+[5.946146] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg\n'}
+[5.946186] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail\n'}
+[5.946224] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_position__type_support.cpp\n'}
+[5.946277] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_position__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.946319] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_torque__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.946357] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_torque__type_support.cpp\n'}
+[5.946398] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib/libdynamixel_sdk_inf__rosidl_typesupport_introspection_cpp.so\n'}
+[5.946487] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Set runtime path of "/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib/libdynamixel_sdk_inf__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[5.946559] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib/libdynamixel_sdk_inf__rosidl_typesupport_cpp.so\n'}
+[5.946750] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Set runtime path of "/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib/libdynamixel_sdk_inf__rosidl_typesupport_cpp.so" to ""\n'}
+[5.946830] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/environment/pythonpath.sh\n'}
+[5.946871] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/environment/pythonpath.dsv\n'}
+[5.946934] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf-3.7.40-py3.10.egg-info\n'}
+[5.946987] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf-3.7.40-py3.10.egg-info/SOURCES.txt\n'}
+[5.947039] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf-3.7.40-py3.10.egg-info/PKG-INFO\n'}
+[5.947082] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf-3.7.40-py3.10.egg-info/dependency_links.txt\n'}
+[5.947135] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf-3.7.40-py3.10.egg-info/top_level.txt\n'}
+[5.947200] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf\n'}
+[5.947253] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/dynamixel_sdk_inf_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.947312] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/srv\n'}
+[5.947366] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/srv/_set_mode.py\n'}
+[5.947417] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/srv/_set_mode_s.c\n'}
+[5.947473] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/srv/__init__.py\n'}
+[5.947534] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/srv/_get_torquectrl.py\n'}
+[5.947587] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/srv/_get_position_s.c\n'}
+[5.947632] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/srv/_get_position.py\n'}
+[5.947691] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/srv/_get_torquectrl_s.c\n'}
+[5.947745] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/srv/_set_id_s.c\n'}
+[5.947798] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/srv/_set_id.py\n'}
+[5.947849] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/msg\n'}
+[5.947901] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/msg/_set_position_s.c\n'}
+[5.948022] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/msg/__init__.py\n'}
+[5.948061] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/msg/_set_torque.py\n'}
+[5.948129] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/msg/_set_position.py\n'}
+[5.948191] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/msg/_set_torque_s.c\n'}
+[5.948250] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/__init__.py\n'}
+[5.948307] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/_dynamixel_sdk_inf_s.ep.rosidl_typesupport_c.c\n'}
+[5.948390] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/_dynamixel_sdk_inf_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[5.948479] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/dynamixel_sdk_inf_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.948564] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/libdynamixel_sdk_inf__rosidl_generator_py.so\n'}
+[5.948685] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/dynamixel_sdk_inf_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.948768] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/_dynamixel_sdk_inf_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.960818] (-) TimerEvent: {}
+[5.974273] (dynamixel_sdk_inf) StdoutLine: {'line': b"Listing '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf'...\n"}
+[5.974445] (dynamixel_sdk_inf) StdoutLine: {'line': b"Compiling '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/__init__.py'...\n"}
+[5.974508] (dynamixel_sdk_inf) StdoutLine: {'line': b"Listing '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/msg'...\n"}
+[5.974554] (dynamixel_sdk_inf) StdoutLine: {'line': b"Compiling '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/msg/__init__.py'...\n"}
+[5.974596] (dynamixel_sdk_inf) StdoutLine: {'line': b"Compiling '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/msg/_set_position.py'...\n"}
+[5.974637] (dynamixel_sdk_inf) StdoutLine: {'line': b"Compiling '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/msg/_set_torque.py'...\n"}
+[5.974677] (dynamixel_sdk_inf) StdoutLine: {'line': b"Listing '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/srv'...\n"}
+[5.974719] (dynamixel_sdk_inf) StdoutLine: {'line': b"Compiling '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/srv/__init__.py'...\n"}
+[5.974761] (dynamixel_sdk_inf) StdoutLine: {'line': b"Compiling '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/srv/_get_position.py'...\n"}
+[5.974802] (dynamixel_sdk_inf) StdoutLine: {'line': b"Compiling '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/srv/_set_id.py'...\n"}
+[5.974842] (dynamixel_sdk_inf) StdoutLine: {'line': b"Compiling '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/srv/_set_mode.py'...\n"}
+[5.977963] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/dynamixel_sdk_inf_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.978131] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Set runtime path of "/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/dynamixel_sdk_inf_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.978204] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/dynamixel_sdk_inf_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.978337] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Set runtime path of "/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/dynamixel_sdk_inf_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.978440] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/dynamixel_sdk_inf_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.978606] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Set runtime path of "/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages/dynamixel_sdk_inf/dynamixel_sdk_inf_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.978688] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib/libdynamixel_sdk_inf__rosidl_generator_py.so\n'}
+[5.978893] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Set runtime path of "/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib/libdynamixel_sdk_inf__rosidl_generator_py.so" to ""\n'}
+[5.978950] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/msg/SetPosition.idl\n'}
+[5.979007] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/msg/SetTorque.idl\n'}
+[5.979047] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/srv/GetPosition.idl\n'}
+[5.979102] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/srv/SetMode.idl\n'}
+[5.979189] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/srv/SetId.idl\n'}
+[5.979228] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/msg/SetPosition.msg\n'}
+[5.979267] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/msg/SetTorque.msg\n'}
+[5.979307] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/srv/GetPosition.srv\n'}
+[5.979347] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/srv/GetPosition_Request.msg\n'}
+[5.979385] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/srv/GetPosition_Response.msg\n'}
+[5.979460] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/srv/SetMode.srv\n'}
+[5.979500] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/srv/SetMode_Request.msg\n'}
+[5.979540] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/srv/SetMode_Response.msg\n'}
+[5.979579] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/srv/SetId.srv\n'}
+[5.979645] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/srv/SetId_Request.msg\n'}
+[5.979683] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/srv/SetId_Response.msg\n'}
+[5.979721] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk_inf\n'}
+[5.979760] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk_inf\n'}
+[5.979798] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/environment/ament_prefix_path.sh\n'}
+[5.979837] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/environment/ament_prefix_path.dsv\n'}
+[5.979875] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/environment/path.sh\n'}
+[5.979922] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/environment/path.dsv\n'}
+[5.980002] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/local_setup.bash\n'}
+[5.980055] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/local_setup.sh\n'}
+[5.980094] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/local_setup.zsh\n'}
+[5.980133] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/local_setup.dsv\n'}
+[5.980172] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/package.dsv\n'}
+[5.980210] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/ament_index/resource_index/packages/dynamixel_sdk_inf\n'}
+[5.980247] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/export_dynamixel_sdk_inf__rosidl_generator_cExport.cmake\n'}
+[5.980286] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/export_dynamixel_sdk_inf__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.980340] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/export_dynamixel_sdk_inf__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.980438] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/export_dynamixel_sdk_inf__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.980477] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/export_dynamixel_sdk_inf__rosidl_generator_cppExport.cmake\n'}
+[5.980517] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/export_dynamixel_sdk_inf__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.980557] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/export_dynamixel_sdk_inf__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.980597] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/dynamixel_sdk_inf__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.980636] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/dynamixel_sdk_inf__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.980675] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/dynamixel_sdk_inf__rosidl_typesupport_cExport.cmake\n'}
+[5.980714] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/dynamixel_sdk_inf__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.980828] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/dynamixel_sdk_inf__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.980869] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/dynamixel_sdk_inf__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.980907] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/dynamixel_sdk_inf__rosidl_typesupport_cppExport.cmake\n'}
+[5.980945] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/dynamixel_sdk_inf__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.980982] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/export_dynamixel_sdk_inf__rosidl_generator_pyExport.cmake\n'}
+[5.981019] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/export_dynamixel_sdk_inf__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.981056] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Installing: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/rosidl_cmake-extras.cmake\n'}
+[5.981094] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.981132] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.981168] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.981205] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.981247] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.981313] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.981350] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/dynamixel_sdk_infConfig.cmake\n'}
+[5.981386] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake/dynamixel_sdk_infConfig-version.cmake\n'}
+[5.981426] (dynamixel_sdk_inf) StdoutLine: {'line': b'-- Up-to-date: /home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/package.xml\n'}
+[5.982419] (dynamixel_sdk_inf) CommandEnded: {'returncode': 0}
+[6.060914] (-) TimerEvent: {}
+[6.070147] (dynamixel_sdk_inf) JobEnded: {'identifier': 'dynamixel_sdk_inf', 'rc': 0}
+[6.072082] (motor_setup) JobStarted: {'identifier': 'motor_setup'}
+[6.077591] (motor_setup) JobProgress: {'identifier': 'motor_setup', 'progress': 'cmake'}
+[6.078033] (motor_setup) JobProgress: {'identifier': 'motor_setup', 'progress': 'build'}
+[6.078187] (motor_setup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/proto/Manipulator/DynamixelSDK/build/motor_setup', '--', '-j8', '-l8'], 'cwd': '/home/proto/Manipulator/DynamixelSDK/build/motor_setup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'proto'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/lib:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/proto'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/proto/Manipulator'), ('DESKTOP_SESSION', 'pop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'pop'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '5945'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('MANDATORY_PATH', '/usr/share/gconf/pop.mandatory.path'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'proto'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/pop.default.path'), ('USERNAME', 'proto'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/proto/mambaforge/condabin:/home/proto/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/pop-os:@/tmp/.ICE-unix/2378,unix/pop-os:/tmp/.ICE-unix/2378'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/80104b62_beff_4b2d_a31f_9f02fdb68c2c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'pop:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'pop'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '50'), ('AMENT_PREFIX_PATH', '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/proto/mambaforge/bin/python'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'pop'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/proto/Manipulator/DynamixelSDK/build/motor_setup'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-pop:/etc/xdg'), ('CONDA_EXE', '/home/proto/mambaforge/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/pop:/usr/share/gnome:/home/proto/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/'), ('LDS_MODEL', 'LDS-02'), ('PYTHONPATH', '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf:/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk:/opt/ros/humble')]), 'shell': False}
+[6.095524] (motor_setup) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[6.161029] (-) TimerEvent: {}
+[6.193112] (motor_setup) StdoutLine: {'line': b'-- Found rclcpp: 16.0.4 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[6.211968] (motor_setup) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[6.213636] (motor_setup) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[6.217353] (motor_setup) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[6.224304] (motor_setup) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.239615] (motor_setup) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.261152] (-) TimerEvent: {}
+[6.277628] (motor_setup) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[6.278580] (motor_setup) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[6.361267] (-) TimerEvent: {}
+[6.362520] (motor_setup) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.461393] (-) TimerEvent: {}
+[6.462134] (motor_setup) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.4 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[6.499941] (motor_setup) StdoutLine: {'line': b'-- Found composition: 0.20.3 (/opt/ros/humble/share/composition/cmake)\n'}
+[6.500103] (motor_setup) StdoutLine: {'line': b'-- Found dynamixel_sdk: 3.7.40 (/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk/share/dynamixel_sdk/cmake)\n'}
+[6.501015] (motor_setup) StdoutLine: {'line': b'-- Found dynamixel_sdk_inf: 3.7.40 (/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/share/dynamixel_sdk_inf/cmake)\n'}
+[6.524527] (motor_setup) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[6.561520] (-) TimerEvent: {}
+[6.571044] (motor_setup) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[6.571781] (motor_setup) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[6.572108] (motor_setup) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/proto/Manipulator/DynamixelSDK/src/motor_setup/include\n'}
+[6.572167] (motor_setup) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[6.573032] (motor_setup) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[6.573106] (motor_setup) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[6.573328] (motor_setup) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[6.573735] (motor_setup) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[6.573970] (motor_setup) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[6.574797] (motor_setup) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[6.574843] (motor_setup) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[6.575159] (motor_setup) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[6.575667] (motor_setup) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.593697] (motor_setup) StdoutLine: {'line': b'-- Generating done\n'}
+[6.595722] (motor_setup) StdoutLine: {'line': b'-- Build files have been written to: /home/proto/Manipulator/DynamixelSDK/build/motor_setup\n'}
+[6.614845] (motor_setup) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target set_pose\x1b[0m\n'}
+[6.615032] (motor_setup) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target position_control\x1b[0m\n'}
+[6.615094] (motor_setup) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target position_torque_control\x1b[0m\n'}
+[6.615152] (motor_setup) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target init_component\x1b[0m\n'}
+[6.627665] (motor_setup) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/set_pose.dir/src/position_pub.cpp.o\x1b[0m\n'}
+[6.628049] (motor_setup) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/init_component.dir/src/init_component.cpp.o\x1b[0m\n'}
+[6.629064] (motor_setup) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/position_torque_control.dir/src/pos_torque_control.cpp.o\x1b[0m\n'}
+[6.632517] (motor_setup) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/position_control.dir/src/position_control.cpp.o\x1b[0m\n'}
+[6.661634] (-) TimerEvent: {}
+[6.761948] (-) TimerEvent: {}
+[6.862300] (-) TimerEvent: {}
+[6.962643] (-) TimerEvent: {}
+[7.062984] (-) TimerEvent: {}
+[7.163337] (-) TimerEvent: {}
+[7.263682] (-) TimerEvent: {}
+[7.364053] (-) TimerEvent: {}
+[7.464399] (-) TimerEvent: {}
+[7.564754] (-) TimerEvent: {}
+[7.665105] (-) TimerEvent: {}
+[7.765469] (-) TimerEvent: {}
+[7.865832] (-) TimerEvent: {}
+[7.966207] (-) TimerEvent: {}
+[8.066557] (-) TimerEvent: {}
+[8.166902] (-) TimerEvent: {}
+[8.267254] (-) TimerEvent: {}
+[8.367631] (-) TimerEvent: {}
+[8.468002] (-) TimerEvent: {}
+[8.529846] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/init_component.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kmotor_setup::SetupDynamixel::SetupDynamixel(const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.530293] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/init_component.cpp:59:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[KQOS_RKL10V\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable\x07-Wunused-but-set-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.530393] (motor_setup) StderrLine: {'line': b'   59 |   const auto \x1b[01;35m\x1b[KQOS_RKL10V\x1b[m\x1b[K =\n'}
+[8.530471] (motor_setup) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.568122] (-) TimerEvent: {}
+[8.668478] (-) TimerEvent: {}
+[8.674202] (motor_setup) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:1\x1b[m\x1b[K:\n'}
+[8.674435] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:26:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kusing\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.674521] (motor_setup) StderrLine: {'line': b'   26 |   using SetMode = dynamixel_sdk_inf::srv::SetMode\n'}
+[8.674590] (motor_setup) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[8.674657] (motor_setup) StderrLine: {'line': b'      |                                                  \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[8.674737] (motor_setup) StderrLine: {'line': b'   27 |   \x1b[32m\x1b[Kusing\x1b[m\x1b[K SetTorque = dynamixel_sdk_inf::msg::SetTorque;\n'}
+[8.674804] (motor_setup) StderrLine: {'line': b'      |   \x1b[32m\x1b[K~~~~~\x1b[m\x1b[K                                           \n'}
+[8.675009] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:34:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSetTorque\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kdynamixel_sdk_inf::msg::SetTorque\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.675205] (motor_setup) StderrLine: {'line': b'   34 |   rclcpp::Subscription<\x1b[01;31m\x1b[KSetTorque\x1b[m\x1b[K>::SharedPtr set_torque_subscriber_;\n'}
+[8.675273] (motor_setup) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[8.675336] (motor_setup) StderrLine: {'line': b'      |                        \x1b[32m\x1b[Kdynamixel_sdk_inf::msg::SetTorque\x1b[m\x1b[K\n'}
+[8.675400] (motor_setup) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/set_torque.hpp:7\x1b[m\x1b[K,\n'}
+[8.675468] (motor_setup) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:12\x1b[m\x1b[K,\n'}
+[8.675535] (motor_setup) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:1\x1b[m\x1b[K:\n'}
+[8.675601] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_torque__struct.hpp:136:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdynamixel_sdk_inf::msg::SetTorque\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[8.675672] (motor_setup) StderrLine: {'line': b'  136 | using \x1b[01;36m\x1b[KSetTorque\x1b[m\x1b[K =\n'}
+[8.675739] (motor_setup) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[8.675803] (motor_setup) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:1\x1b[m\x1b[K:\n'}
+[8.675871] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:34:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[8.675962] (motor_setup) StderrLine: {'line': b'   34 |   rclcpp::Subscription<SetTorque\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr set_torque_subscriber_;\n'}
+[8.676029] (motor_setup) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[8.676094] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:34:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 3 is invalid\n'}
+[8.676162] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:34:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 4 is invalid\n'}
+[8.676229] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:34:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 5 is invalid\n'}
+[8.676297] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:34:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[8.676364] (motor_setup) StderrLine: {'line': b'   34 |   rclcpp::Subscription<SetTorque>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K set_torque_subscriber_;\n'}
+[8.676431] (motor_setup) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[8.676507] (motor_setup) StderrLine: {'line': b'      |                                             \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[8.680114] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:34:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kset_torque_subscriber_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[8.680372] (motor_setup) StderrLine: {'line': b'   34 |   rclcpp::Subscription<SetTorque>::SharedPtr \x1b[01;31m\x1b[Kset_torque_subscriber_\x1b[m\x1b[K;\n'}
+[8.680445] (motor_setup) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.708083] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:37:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSetMode\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kdynamixel_sdk_inf::srv::SetMode\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.708389] (motor_setup) StderrLine: {'line': b'   37 |   rclcpp::Service<\x1b[01;31m\x1b[KSetMode\x1b[m\x1b[K>::SharedPtr set_torque_mode_server_;\n'}
+[8.708473] (motor_setup) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[8.708540] (motor_setup) StderrLine: {'line': b'      |                   \x1b[32m\x1b[Kdynamixel_sdk_inf::srv::SetMode\x1b[m\x1b[K\n'}
+[8.708607] (motor_setup) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/set_mode.hpp:7\x1b[m\x1b[K,\n'}
+[8.708671] (motor_setup) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:14\x1b[m\x1b[K,\n'}
+[8.708736] (motor_setup) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:1\x1b[m\x1b[K:\n'}
+[8.708811] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_mode__struct.hpp:251:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdynamixel_sdk_inf::srv::SetMode\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[8.708887] (motor_setup) StderrLine: {'line': b'  251 | struct \x1b[01;36m\x1b[KSetMode\x1b[m\x1b[K\n'}
+[8.708948] (motor_setup) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[8.709008] (motor_setup) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:1\x1b[m\x1b[K:\n'}
+[8.709064] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:37:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[8.709134] (motor_setup) StderrLine: {'line': b'   37 |   rclcpp::Service<SetMode\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr set_torque_mode_server_;\n'}
+[8.709202] (motor_setup) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[8.709270] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:37:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[8.709339] (motor_setup) StderrLine: {'line': b'   37 |   rclcpp::Service<SetMode>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K set_torque_mode_server_;\n'}
+[8.709409] (motor_setup) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[8.709478] (motor_setup) StderrLine: {'line': b'      |                                      \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[8.709547] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:37:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kint motor_setup::PosTorqueControl::SharedPtr\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.709631] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:34:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kint motor_setup::PosTorqueControl::SharedPtr\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.709700] (motor_setup) StderrLine: {'line': b'   34 |   rclcpp::Subscription<SetTorque>::\x1b[01;36m\x1b[KSharedPtr\x1b[m\x1b[K set_torque_subscriber_;\n'}
+[8.709766] (motor_setup) StderrLine: {'line': b'      |                                    \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[8.711433] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:37:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kset_torque_mode_server_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[8.712054] (motor_setup) StderrLine: {'line': b'   37 |   rclcpp::Service<SetMode>::SharedPtr \x1b[01;31m\x1b[Kset_torque_mode_server_\x1b[m\x1b[K;\n'}
+[8.712137] (motor_setup) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.725599] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kmotor_setup::PosTorqueControl::PosTorqueControl(const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.725953] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:96:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSetMode\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kdynamixel_sdk_inf::srv::SetMode\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.726058] (motor_setup) StderrLine: {'line': b'   96 |     const std::shared_ptr<\x1b[01;31m\x1b[KSetMode\x1b[m\x1b[K::Request> request,\n'}
+[8.726133] (motor_setup) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[8.726203] (motor_setup) StderrLine: {'line': b'      |                           \x1b[32m\x1b[Kdynamixel_sdk_inf::srv::SetMode\x1b[m\x1b[K\n'}
+[8.726268] (motor_setup) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/set_mode.hpp:7\x1b[m\x1b[K,\n'}
+[8.726348] (motor_setup) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:14\x1b[m\x1b[K,\n'}
+[8.726418] (motor_setup) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:1\x1b[m\x1b[K:\n'}
+[8.726662] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_mode__struct.hpp:251:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdynamixel_sdk_inf::srv::SetMode\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[8.726745] (motor_setup) StderrLine: {'line': b'  251 | struct \x1b[01;36m\x1b[KSetMode\x1b[m\x1b[K\n'}
+[8.726811] (motor_setup) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[8.726875] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:96:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[8.726941] (motor_setup) StderrLine: {'line': b'   96 |     const std::shared_ptr<SetMode::Request\x1b[01;31m\x1b[K>\x1b[m\x1b[K request,\n'}
+[8.727006] (motor_setup) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[8.727079] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:97:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSetMode\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kdynamixel_sdk_inf::srv::SetMode\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.727149] (motor_setup) StderrLine: {'line': b'   97 |     std::shared_ptr<\x1b[01;31m\x1b[KSetMode\x1b[m\x1b[K::Response> response) -> void\n'}
+[8.727212] (motor_setup) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[8.727301] (motor_setup) StderrLine: {'line': b'      |                     \x1b[32m\x1b[Kdynamixel_sdk_inf::srv::SetMode\x1b[m\x1b[K\n'}
+[8.727368] (motor_setup) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/set_mode.hpp:7\x1b[m\x1b[K,\n'}
+[8.727436] (motor_setup) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:14\x1b[m\x1b[K,\n'}
+[8.727496] (motor_setup) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:1\x1b[m\x1b[K:\n'}
+[8.727558] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_mode__struct.hpp:251:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdynamixel_sdk_inf::srv::SetMode\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[8.727629] (motor_setup) StderrLine: {'line': b'  251 | struct \x1b[01;36m\x1b[KSetMode\x1b[m\x1b[K\n'}
+[8.727699] (motor_setup) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[8.727768] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:97:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[8.727837] (motor_setup) StderrLine: {'line': b'   97 |     std::shared_ptr<SetMode::Response\x1b[01;31m\x1b[K>\x1b[m\x1b[K response) -> void\n'}
+[8.727919] (motor_setup) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[8.728061] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[8.728135] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:99:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[8.728202] (motor_setup) StderrLine: {'line': b'   99 |         response\x1b[01;31m\x1b[K->\x1b[m\x1b[Kset = true;\n'}
+[8.728269] (motor_setup) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[8.728335] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:100:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[8.728407] (motor_setup) StderrLine: {'line': b'  100 |         for (uint8_t m_id : request\x1b[01;31m\x1b[K->\x1b[m\x1b[Kmotor_ids) {\n'}
+[8.728475] (motor_setup) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[8.728541] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:111:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[8.728625] (motor_setup) StderrLine: {'line': b'  111 |                 response\x1b[01;31m\x1b[K->\x1b[m\x1b[Kset = false;\n'}
+[8.728702] (motor_setup) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[8.737093] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kmotor_setup::PosTorqueControl::PosTorqueControl(const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.737311] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:119:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kset_torque_mode_server_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.737391] (motor_setup) StderrLine: {'line': b'  119 |   \x1b[01;31m\x1b[Kset_torque_mode_server_\x1b[m\x1b[K = create_service<SetMode>("set_mode", set_torque_control_mode);\n'}
+[8.737463] (motor_setup) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.738005] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:119:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSetMode\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kdynamixel_sdk_inf::srv::SetMode\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.738229] (motor_setup) StderrLine: {'line': b'  119 |   set_torque_mode_server_ = create_service<\x1b[01;31m\x1b[KSetMode\x1b[m\x1b[K>("set_mode", set_torque_control_mode);\n'}
+[8.738307] (motor_setup) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[8.738377] (motor_setup) StderrLine: {'line': b'      |                                            \x1b[32m\x1b[Kdynamixel_sdk_inf::srv::SetMode\x1b[m\x1b[K\n'}
+[8.738441] (motor_setup) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/set_mode.hpp:7\x1b[m\x1b[K,\n'}
+[8.738508] (motor_setup) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:14\x1b[m\x1b[K,\n'}
+[8.738575] (motor_setup) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:1\x1b[m\x1b[K:\n'}
+[8.738640] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/srv/detail/set_mode__struct.hpp:251:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdynamixel_sdk_inf::srv::SetMode\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[8.738719] (motor_setup) StderrLine: {'line': b'  251 | struct \x1b[01;36m\x1b[KSetMode\x1b[m\x1b[K\n'}
+[8.738785] (motor_setup) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[8.738852] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:119:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmotor_setup::PosTorqueControl::create_service<<expression error> >(const char [9], motor_setup::PosTorqueControl::PosTorqueControl(const rclcpp::NodeOptions&)::<lambda(int, int)>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.738920] (motor_setup) StderrLine: {'line': b'  119 |   set_torque_mode_server_ = \x1b[01;31m\x1b[Kcreate_service<SetMode>("set_mode", set_torque_control_mode)\x1b[m\x1b[K;\n'}
+[8.738983] (motor_setup) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.739052] (motor_setup) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321\x1b[m\x1b[K,\n'}
+[8.739127] (motor_setup) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[8.739194] (motor_setup) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[8.739263] (motor_setup) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[8.739332] (motor_setup) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:8\x1b[m\x1b[K,\n'}
+[8.739399] (motor_setup) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:1\x1b[m\x1b[K:\n'}
+[8.739463] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:141:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ServiceT, class CallbackT> typename rclcpp::Service<ServiceT>::SharedPtr rclcpp::Node::create_service(const string&, CallbackT&&, const rmw_qos_profile_t&, rclcpp::CallbackGroup::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.739535] (motor_setup) StderrLine: {'line': b'  141 | \x1b[01;36m\x1b[KNode\x1b[m\x1b[K::create_service(\n'}
+[8.739602] (motor_setup) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[8.739666] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:141:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[8.739736] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:119:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[8.739799] (motor_setup) StderrLine: {'line': b'  119 |   set_torque_mode_server_ = \x1b[01;31m\x1b[Kcreate_service<SetMode>("set_mode", set_torque_control_mode)\x1b[m\x1b[K;\n'}
+[8.739860] (motor_setup) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.753777] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:150:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kset_torque_subscriber_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.754014] (motor_setup) StderrLine: {'line': b'  150 |     \x1b[01;31m\x1b[Kset_torque_subscriber_\x1b[m\x1b[K =\n'}
+[8.754097] (motor_setup) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.754558] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:151:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSetTorque\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kdynamixel_sdk_inf::msg::SetTorque\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.754723] (motor_setup) StderrLine: {'line': b'  151 |       this->create_subscription<\x1b[01;31m\x1b[KSetTorque\x1b[m\x1b[K>(\n'}
+[8.754788] (motor_setup) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[8.754858] (motor_setup) StderrLine: {'line': b'      |                                 \x1b[32m\x1b[Kdynamixel_sdk_inf::msg::SetTorque\x1b[m\x1b[K\n'}
+[8.754923] (motor_setup) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/set_torque.hpp:7\x1b[m\x1b[K,\n'}
+[8.754989] (motor_setup) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/include/motor_setup/pos_torque_control.hpp:12\x1b[m\x1b[K,\n'}
+[8.755053] (motor_setup) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:1\x1b[m\x1b[K:\n'}
+[8.755119] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/install/dynamixel_sdk_inf/include/dynamixel_sdk_inf/dynamixel_sdk_inf/msg/detail/set_torque__struct.hpp:136:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdynamixel_sdk_inf::msg::SetTorque\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[8.755189] (motor_setup) StderrLine: {'line': b'  136 | using \x1b[01;36m\x1b[KSetTorque\x1b[m\x1b[K =\n'}
+[8.755253] (motor_setup) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[8.756136] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:154:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSetTorque\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[8.756365] (motor_setup) StderrLine: {'line': b'  154 |       [this](const \x1b[01;31m\x1b[KSetTorque\x1b[m\x1b[K::SharedPtr msg) -> void\n'}
+[8.756440] (motor_setup) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[8.756513] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[8.756579] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:181:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[8.756645] (motor_setup) StderrLine: {'line': b'  181 |     )\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[8.756709] (motor_setup) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[8.756770] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kmotor_setup::PosTorqueControl::PosTorqueControl(const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.756835] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:181:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[8.756903] (motor_setup) StderrLine: {'line': b'  181 |     )\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[8.756967] (motor_setup) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[8.757029] (motor_setup) StderrLine: {'line': b'      |      \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[8.757096] (motor_setup) StderrLine: {'line': b'\x1b[01m\x1b[K/home/proto/Manipulator/DynamixelSDK/src/motor_setup/src/pos_torque_control.cpp:151:43:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.757164] (motor_setup) StderrLine: {'line': b'  151 |       this->create_subscription<SetTorque>\x1b[01;36m\x1b[K(\x1b[m\x1b[K\n'}
+[8.757229] (motor_setup) StderrLine: {'line': b'      |                                           \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[8.768592] (-) TimerEvent: {}
+[8.868942] (-) TimerEvent: {}
+[8.969301] (-) TimerEvent: {}
+[9.069677] (-) TimerEvent: {}
+[9.170049] (-) TimerEvent: {}
+[9.270380] (-) TimerEvent: {}
+[9.370718] (-) TimerEvent: {}
+[9.401765] (motor_setup) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/position_torque_control.dir/build.make:76: CMakeFiles/position_torque_control.dir/src/pos_torque_control.cpp.o] Error 1\n'}
+[9.402081] (motor_setup) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/position_torque_control.dir/all] Error 2\n'}
+[9.402168] (motor_setup) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[9.470855] (-) TimerEvent: {}
+[9.543529] (motor_setup) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX shared library libinit_component.so\x1b[0m\n'}
+[9.570998] (-) TimerEvent: {}
+[9.668788] (motor_setup) StdoutLine: {'line': b'[ 62%] Built target init_component\n'}
+[9.671089] (-) TimerEvent: {}
+[9.771357] (-) TimerEvent: {}
+[9.871747] (-) TimerEvent: {}
+[9.972090] (-) TimerEvent: {}
+[10.072391] (-) TimerEvent: {}
+[10.172689] (-) TimerEvent: {}
+[10.273038] (-) TimerEvent: {}
+[10.368884] (motor_setup) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable set_pose\x1b[0m\n'}
+[10.373153] (-) TimerEvent: {}
+[10.473481] (-) TimerEvent: {}
+[10.542325] (motor_setup) StdoutLine: {'line': b'[ 75%] Built target set_pose\n'}
+[10.573632] (-) TimerEvent: {}
+[10.673959] (-) TimerEvent: {}
+[10.774359] (-) TimerEvent: {}
+[10.874718] (-) TimerEvent: {}
+[10.975129] (-) TimerEvent: {}
+[11.075657] (-) TimerEvent: {}
+[11.176563] (-) TimerEvent: {}
+[11.277067] (-) TimerEvent: {}
+[11.377518] (-) TimerEvent: {}
+[11.477863] (-) TimerEvent: {}
+[11.578204] (-) TimerEvent: {}
+[11.678627] (-) TimerEvent: {}
+[11.779138] (-) TimerEvent: {}
+[11.879558] (-) TimerEvent: {}
+[11.980059] (-) TimerEvent: {}
+[12.080431] (-) TimerEvent: {}
+[12.180864] (-) TimerEvent: {}
+[12.281283] (-) TimerEvent: {}
+[12.381624] (-) TimerEvent: {}
+[12.481882] (-) TimerEvent: {}
+[12.582154] (-) TimerEvent: {}
+[12.682478] (-) TimerEvent: {}
+[12.783988] (-) TimerEvent: {}
+[12.884323] (-) TimerEvent: {}
+[12.984647] (-) TimerEvent: {}
+[13.084962] (-) TimerEvent: {}
+[13.185280] (-) TimerEvent: {}
+[13.285600] (-) TimerEvent: {}
+[13.385931] (-) TimerEvent: {}
+[13.486261] (-) TimerEvent: {}
+[13.586564] (-) TimerEvent: {}
+[13.686881] (-) TimerEvent: {}
+[13.787262] (-) TimerEvent: {}
+[13.887604] (-) TimerEvent: {}
+[13.987984] (-) TimerEvent: {}
+[14.088276] (-) TimerEvent: {}
+[14.105013] (motor_setup) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX shared library libposition_control.so\x1b[0m\n'}
+[14.188467] (-) TimerEvent: {}
+[14.288771] (-) TimerEvent: {}
+[14.389170] (-) TimerEvent: {}
+[14.466242] (motor_setup) StdoutLine: {'line': b'[ 87%] Built target position_control\n'}
+[14.466985] (motor_setup) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[14.468328] (motor_setup) CommandEnded: {'returncode': 2}
+[14.489870] (-) TimerEvent: {}
+[14.496916] (motor_setup) JobEnded: {'identifier': 'motor_setup', 'rc': 2}
+[14.507308] (-) EventReactorShutdown: {}

@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dynamixel_sdk_inf/srv/GetTorquectrl.srv
+// generated code does not contain a copyright notice
+
+
+module dynamixel_sdk_inf {
+  module srv {
+    @verbatim (language="comment", text=
+      "Constants" "\n"
+      "Request")
+    struct GetTorquectrl_Request {
+      uint8 id;
+    };
+    @verbatim (language="comment", text=
+      "Response")
+    struct GetTorquectrl_Response {
+      int32 torque;
+    };
+  };
+};

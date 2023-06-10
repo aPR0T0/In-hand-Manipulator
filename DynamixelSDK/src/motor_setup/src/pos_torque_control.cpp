@@ -7,8 +7,8 @@
 
 #include "dynamixel_sdk/dynamixel_sdk.h"
 #include "dynamixel_sdk_inf/srv/get_position.hpp"
-#include "dynamixel_sdk_inf/srv/get_torquectrl.hpp"
 #include "dynamixel_sdk_inf/msg/set_torque.hpp"
+#include "dynamixel_sdk_inf/srv/set_id.hpp"
 #include "rcutils/cmdline_parser.h"
 #include "rclcpp/rclcpp.hpp"
 
@@ -93,10 +93,10 @@ PosTorqueControl::PosTorqueControl(const rclcpp::NodeOptions & options)
 
   auto set_torque_control_mode =
     [this](
-    const std::shared_ptr<SetId::Request> request,
-    std::shared_ptr<SetId::Response> response) -> void
+    const std::shared_ptr<SetMode::Request> request,
+    std::shared_ptr<SetMode::Response> response) -> void
     {
-        response->set = true;
+        response->torque_mode = 1;
         for (uint8_t m_id : request->motor_ids) {
             dxl_comm_result = packetHandler->write1ByteTxRx(
                 portHandler,
@@ -108,15 +108,15 @@ PosTorqueControl::PosTorqueControl(const rclcpp::NodeOptions & options)
             // std::cout << (int)m_id << std::endl;
             if (dxl_comm_result != COMM_SUCCESS) {
                 RCLCPP_ERROR(rclcpp::get_logger("setup_dynamixel_node"), "Failed to enable torque control mode for id %d", (int)m_id);
-                response->set = false;
+                response->torque_mode = 0;
             } else {
                 RCLCPP_INFO(rclcpp::get_logger("setup_dynamixel_node"), "Succeeded to enable torque control mode for id %d", (int)m_id);
-                // response->set = true;
+                // response->torque_mode = 1;
             }
         }
     };
 
-  set_torque_mode_server_ = create_service<SetId>("set_id", set_torque_control_mode);
+  set_torque_mode_server_ = create_service<SetMode>("set_mode", set_torque_control_mode);
 
   auto get_present_position =
     [this](
@@ -155,7 +155,7 @@ PosTorqueControl::PosTorqueControl(const rclcpp::NodeOptions & options)
       {
         uint8_t dxl_error = 0;
 
-        // Position Value of X series is 4 byte data.
+        // Torque Value of X series is 4 byte data.
         // For AX & MX(1.0) use 2 byte data(uint16_t) for the Position Value.
         uint32_t goal_torque = (unsigned int)msg->torque;  // Convert int32 -> uint32
 

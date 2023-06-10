@@ -27,7 +27,7 @@ set(msg_files
 
 set(srv_files
   "srv/GetPosition.srv"
-  "srv/GetTorquectrl.srv"
+  "srv/SetMode.srv"
   "srv/SetId.srv"
 )
 

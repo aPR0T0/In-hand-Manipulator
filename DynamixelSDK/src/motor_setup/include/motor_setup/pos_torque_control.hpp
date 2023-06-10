@@ -9,9 +9,9 @@
 #include "rcutils/cmdline_parser.h"
 #include "dynamixel_sdk/dynamixel_sdk.h"
 #include "dynamixel_sdk_inf/srv/get_position.hpp"
-#include "dynamixel_sdk_inf/srv/get_torquectrl.hpp"
 #include "dynamixel_sdk_inf/msg/set_torque.hpp"
 #include "dynamixel_sdk_inf/srv/set_id.hpp"
+#include "dynamixel_sdk_inf/srv/set_mode.hpp"
 
 #include "motor_setup/visibility_control.h"
 
@@ -23,6 +23,7 @@ class PosTorqueControl : public rclcpp::Node
 public:
 //   COMPOSITION_PUBLIC
   using SetId = dynamixel_sdk_inf::srv::SetId;
+  using SetMode = dynamixel_sdk_inf::srv::SetMode;
   using SetTorque = dynamixel_sdk_inf::msg::SetTorque;
   using GetPosition = dynamixel_sdk_inf::srv::GetPosition;
   COMPOSITION_PUBLIC
@@ -33,13 +34,13 @@ private:
   rclcpp::Subscription<SetTorque>::SharedPtr set_torque_subscriber_;
   rclcpp::Service<GetPosition>::SharedPtr get_position_server_;
   rclcpp::Service<SetId>::SharedPtr set_id_server_;
-  rclcpp::Service<SetTorquectrl>::SharedPtr set_torque_mode_server_;
+  rclcpp::Service<SetMode>::SharedPtr set_torque_mode_server_;
   rclcpp::TimerBase::SharedPtr timer_;
   dynamixel::PortHandler * portHandler;
   dynamixel::PacketHandler * packetHandler;
   uint8_t dxl_error = 0;
   int dxl_comm_result = COMM_TX_FAIL;
-  uint16_t addr_present_position;
+  uint16_t addr_goal_torque;
   uint16_t addr_present_position;
   uint16_t addr_torque_mode_enable;
   float protocol_version;
