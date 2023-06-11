@@ -29,7 +29,7 @@ class PositionPublisher : public rclcpp::Node
     void timer_callback()
     {
       auto pose_message = dynamixel_sdk_inf::msg::SetPosition();
-      std::cout<< "Enter the desired position for the motor\n";
+      std::cout<< "Enter the desired position for the motor, from 0  ~  4095\n";
       std::cin>>pose_message.position;
       pose_message.id = 3;
       RCLCPP_INFO(this->get_logger(), "Position: '%d' | ID: '%d'\n", pose_message.position, pose_message.id);

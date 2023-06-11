@@ -7,7 +7,7 @@
 
 #include "dynamixel_sdk/dynamixel_sdk.h"
 #include "dynamixel_sdk_inf/srv/get_position.hpp"
-#include "dynamixel_sdk_inf/msg/set_torque.hpp"
+#include "dynamixel_sdk_inf/msg/set_position.hpp"
 #include "dynamixel_sdk_inf/srv/set_id.hpp"
 #include "rcutils/cmdline_parser.h"
 #include "rclcpp/rclcpp.hpp"
@@ -148,17 +148,25 @@ PosTorqueControl::PosTorqueControl(const rclcpp::NodeOptions & options)
     };
 
     set_torque_subscriber_ =
-      this->create_subscription<SetTorque>(
-      "set_torque",
+      this->create_subscription<SetPosition>(
+      "set_position",
       QOS_RKL10V,
-      [this](const SetTorque::SharedPtr msg) -> void
+      [this](const SetPosition::SharedPtr msg) -> void
       {
         uint8_t dxl_error = 0;
 
+        int goal_position = msg->position;
+
+        int difference = (goal_position - present_position)/4;
         // Torque Value of X series is 4 byte data.
         // For AX & MX(1.0) use 2 byte data(uint16_t) for the Position Value.
-        uint32_t goal_torque = (unsigned int)msg->torque;  // Convert int32 -> uint32
-
+        uint32_t goal_torque;
+        if (difference < 0){
+          goal_torque = std::abs(difference);  // Convert int32 -> uint32
+        }
+        else{
+          goal_torque = 1023 + std::abs(difference);
+        }
         // Write Goal Torque (length : 4 bytes)
         // When writing 2 byte data to AX / MX(1.0), use write2ByteTxRx() instead.
         dxl_comm_result =
@@ -175,7 +183,7 @@ PosTorqueControl::PosTorqueControl(const rclcpp::NodeOptions & options)
         } else if (dxl_error != 0) {
           RCLCPP_INFO(this->get_logger(), "%s", packetHandler->getRxPacketError(dxl_error));
         } else {
-          RCLCPP_INFO(this->get_logger(), "Set [ID: %d] [Goal Torque: %d]", msg->id, msg->torque);
+          RCLCPP_INFO(this->get_logger(), "Set [ID: %d] [Goal Torque: %d]", msg->id, goal_torque);
         }
       }
     );

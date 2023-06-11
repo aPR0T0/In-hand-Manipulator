@@ -9,7 +9,7 @@
 #include "rcutils/cmdline_parser.h"
 #include "dynamixel_sdk/dynamixel_sdk.h"
 #include "dynamixel_sdk_inf/srv/get_position.hpp"
-#include "dynamixel_sdk_inf/msg/set_torque.hpp"
+#include "dynamixel_sdk_inf/msg/set_position.hpp"
 #include "dynamixel_sdk_inf/srv/set_id.hpp"
 #include "dynamixel_sdk_inf/srv/set_mode.hpp"
 
@@ -24,14 +24,15 @@ public:
 //   COMPOSITION_PUBLIC
   using SetId = dynamixel_sdk_inf::srv::SetId;
   using SetMode = dynamixel_sdk_inf::srv::SetMode;
-  using SetTorque = dynamixel_sdk_inf::msg::SetTorque;
+  using SetPosition = dynamixel_sdk_inf::msg::SetPosition;
   using GetPosition = dynamixel_sdk_inf::srv::GetPosition;
+
   COMPOSITION_PUBLIC
   explicit PosTorqueControl(const rclcpp::NodeOptions & options);
   virtual ~PosTorqueControl();
 
 private:
-  rclcpp::Subscription<SetTorque>::SharedPtr set_torque_subscriber_;
+  rclcpp::Subscription<SetPosition>::SharedPtr set_torque_subscriber_;
   rclcpp::Service<GetPosition>::SharedPtr get_position_server_;
   rclcpp::Service<SetId>::SharedPtr set_id_server_;
   rclcpp::Service<SetMode>::SharedPtr set_torque_mode_server_;

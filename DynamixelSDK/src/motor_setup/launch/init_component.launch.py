@@ -20,8 +20,8 @@ def generate_launch_description():
             composable_node_descriptions=[
                 ComposableNode(
                     package='motor_setup',
-                    plugin='motor_setup::PositionControl',
-                    name='position_control'),
+                    plugin='motor_setup::SetupDynamixel',
+                    name='init_component'),
             ],
             parameters = [config],
             output='screen'
