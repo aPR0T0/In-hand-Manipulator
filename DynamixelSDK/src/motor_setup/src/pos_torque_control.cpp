@@ -158,19 +158,22 @@ PosTorqueControl::PosTorqueControl(const rclcpp::NodeOptions & options)
         int goal_position = msg->position;
 
         int difference = (goal_position - present_position)/4;
+        std::cout<<present_position<<std::endl;
         // Torque Value of X series is 4 byte data.
         // For AX & MX(1.0) use 2 byte data(uint16_t) for the Position Value.
-        uint32_t goal_torque;
+        uint16_t goal_torque;
         if (difference < 0){
-          goal_torque = std::abs(difference);  // Convert int32 -> uint32
+          goal_torque = (unsigned int)std::abs(difference);  // Convert int32 -> uint32
+          std::cout<<"Angle value "<<goal_torque<<std::endl;
         }
         else{
-          goal_torque = 1023 + std::abs(difference);
+          goal_torque = (unsigned int)(1023 + std::abs(difference));
+          std::cout<<"Angle value "<<goal_torque<<std::endl;
         }
-        // Write Goal Torque (length : 4 bytes)
+        // Write Goal Torque (length : 2 bytes)
         // When writing 2 byte data to AX / MX(1.0), use write2ByteTxRx() instead.
         dxl_comm_result =
-        packetHandler->write4ByteTxRx(
+        packetHandler->write2ByteTxRx(
           portHandler,
           (uint8_t) msg->id,
           addr_goal_torque,
