@@ -1,5 +1,5 @@
-#ifndef TUNNING_WEBSOCKEt_SERVER_H
-#define TUNNING_WEBSOCKEt_SERVER_H
+#ifndef TUNING_HTTP_SERVER_H
+#define TUNING_HTTP_SERVER_H
 
 #include <string.h>
 #include <fcntl.h>
@@ -19,7 +19,6 @@
 #include "cJSON.h"
 #include "sdkconfig.h"
 #include "wifi_handler.h"
-#include "websocket_server.h"
 
 #define MDNS_INSTANCE "walle pid tuning web server"
 #define MDNS_HOST_NAME CONFIG_MDNS_HOST_NAME
@@ -28,20 +27,18 @@
 #define SCRATCH_BUFSIZE (10240)
 #define CHECK_FILE_EXTENSION(filename, ext) (strcasecmp(&filename[strlen(filename) - strlen(ext)], ext) == 0)
 
-
 typedef struct pid_const
 {
     float kp;
     float ki;
     float kd;
-    float setpoint;
-    float offset;
+    int setpoint;
+    
     bool val_changed;
 } pid_const_t;
 
 pid_const_t read_pid_const();
 void reset_val_changed_pid_const();
-void start_websocket_server();
-void plot_graph(float p_term, float d_term, float i_term, float pitch_corr, float pitch_err);
+void start_tuning_http_server();
 
 #endif

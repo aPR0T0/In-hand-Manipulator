@@ -1,3 +1,3 @@
-idf_component_register(SRCS "self_balancing.c" "wifi_handler.c" "tuning_websocket_server.c"
+idf_component_register(SRCS "angleControl.c" "wifi_handler.c" "tuning_http_server.c"
     INCLUDE_DIRS "include"
     EMBED_FILES ../frontend/index.html)
