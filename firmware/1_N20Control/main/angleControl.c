@@ -73,7 +73,13 @@ int calculate_motor_command(const float ang_err, float *motor_cmd)
 		dir = 0;
 	}
 
-	absolute_pitch_correction = fabshttps://github.com/aPR0T0/Wall-E/tree/master
+	absolute_pitch_correction = fabsf(ang_correction);
+
+	*motor_cmd = bound(absolute_pitch_correction, 0, MAX_PITCH_CORRECTION);
+
+	return dir;
+	// prev_ang_err = ang_err;
+}
 
 int readEncoder() {
 	int position = 0;
@@ -163,7 +169,7 @@ void balance_task(void *arg)
 		}
 
 		// Bot tilts Upwards
-		if ((dir) == -1)
+		if ((dir) == 0)
 		{
 			// setting motor A0 with definite speed(duty cycle of motor driver PWM) in Forward direction
 			set_motor_speed(MOTOR_A_0, MOTOR_BACKWARD, motor_pwm);

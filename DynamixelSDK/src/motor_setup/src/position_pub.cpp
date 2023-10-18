@@ -31,7 +31,9 @@ class PositionPublisher : public rclcpp::Node
       auto pose_message = dynamixel_sdk_inf::msg::SetPosition();
       std::cout<< "Enter the desired position for the motor, from 0  ~  4095\n";
       std::cin>>pose_message.position;
-      pose_message.id = 3;
+      std::cout<< "Enter the desired motor id, from 0 ~ 255\n";
+      std::cin>>pose_message.id;
+      pose_message.id = pose_message.id - 48;
       RCLCPP_INFO(this->get_logger(), "Position: '%d' | ID: '%d'\n", pose_message.position, pose_message.id);
       publisher_->publish(pose_message);
     }
