@@ -96,7 +96,6 @@ PosTorqueControl::PosTorqueControl(const rclcpp::NodeOptions & options)
     const std::shared_ptr<SetMode::Request> request,
     std::shared_ptr<SetMode::Response> response) -> void
     {
-        response->torque_mode = 1;
         for (uint8_t m_id : request->motor_ids) {
             dxl_comm_result = packetHandler->write1ByteTxRx(
                 portHandler,
@@ -114,6 +113,7 @@ PosTorqueControl::PosTorqueControl(const rclcpp::NodeOptions & options)
                 // response->torque_mode = 1;
             }
         }
+        response->torque_mode = 1;
     };
 
   set_torque_mode_server_ = create_service<SetMode>("set_mode", set_torque_control_mode);
@@ -170,6 +170,9 @@ PosTorqueControl::PosTorqueControl(const rclcpp::NodeOptions & options)
           goal_torque = (unsigned int)(1023 + std::abs(difference));
           std::cout<<"Angle value "<<goal_torque<<std::endl;
         }
+        // manual static value
+        goal_torque = 512;
+
         // Write Goal Torque (length : 2 bytes)
         // When writing 2 byte data to AX / MX(1.0), use write2ByteTxRx() instead.
         dxl_comm_result =

@@ -10,6 +10,7 @@
 #include "dynamixel_sdk/dynamixel_sdk.h"
 #include "dynamixel_sdk_inf/srv/get_position.hpp"
 #include "dynamixel_sdk_inf/msg/set_position.hpp"
+#include "dynamixel_sdk_inf/msg/set_pose.hpp"
 #include "dynamixel_sdk_inf/srv/set_id.hpp"
 
 #include "motor_setup/visibility_control.h"
@@ -23,13 +24,14 @@ public:
 //   COMPOSITION_PUBLIC
   using SetId = dynamixel_sdk_inf::srv::SetId;
   using SetPosition = dynamixel_sdk_inf::msg::SetPosition;
+  using SetPose = dynamixel_sdk_inf::msg::SetPose;
   using GetPosition = dynamixel_sdk_inf::srv::GetPosition;
   COMPOSITION_PUBLIC
   explicit PositionControl(const rclcpp::NodeOptions & options);
   virtual ~PositionControl();
 
 private:
-  rclcpp::Subscription<SetPosition>::SharedPtr set_position_subscriber_;
+  rclcpp::Subscription<SetPose>::SharedPtr set_position_subscriber_;
   rclcpp::Service<GetPosition>::SharedPtr get_position_server_;
   rclcpp::Service<SetId>::SharedPtr set_id_server_;
   rclcpp::TimerBase::SharedPtr timer_;

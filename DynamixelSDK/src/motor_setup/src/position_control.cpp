@@ -8,6 +8,7 @@
 #include "dynamixel_sdk/dynamixel_sdk.h"
 #include "dynamixel_sdk_inf/srv/get_position.hpp"
 #include "dynamixel_sdk_inf/msg/set_position.hpp"
+#include "dynamixel_sdk_inf/msg/set_pose.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "rcutils/cmdline_parser.h"
 
@@ -118,28 +119,29 @@ PositionControl::PositionControl(const rclcpp::NodeOptions & options)
     };
 
     set_position_subscriber_ =
-      this->create_subscription<SetPosition>(
+      this->create_subscription<dynamixel_sdk_inf::msg::SetPose>(
       "set_position",
       QOS_RKL10V,
-      [this](const SetPosition::SharedPtr msg) -> void
+      [this](const dynamixel_sdk_inf::msg::SetPose::SharedPtr msg) -> void
       {
         uint8_t dxl_error = 0;
 
         // Position Value of X series is 4 byte data.
         // For AX & MX(1.0) use 2 byte data(uint16_t) for the Position Value.
-        uint32_t goal_position = (unsigned int)msg->position;  // Convert int32 -> uint32
+        for ( int i = 0 ; i <= sizeof(msg->position) ; i++ ) {
+          uint32_t goal_position = (unsigned int)msg->position[i];  // Convert int32 -> uint32
 
-        // Write Goal Position (length : 4 bytes)
-        // When writing 2 byte data to AX / MX(1.0), use write2ByteTxRx() instead.
-        dxl_comm_result =
-        packetHandler->write4ByteTxRx(
-          portHandler,
-          (uint8_t) msg->id,
-          addr_goal_position,
-          goal_position,
-          &dxl_error
-        );
-
+          // Write Goal Position (length : 4 bytes)
+          // When writing 2 byte data to AX / MX(1.0), use write2ByteTxRx() instead.
+          dxl_comm_result =
+          packetHandler->write4ByteTxRx(
+            portHandler,
+            (uint8_t) msg->id[i],
+            addr_goal_position,
+            goal_position,
+            &dxl_error
+          );
+        }
         if (dxl_comm_result != COMM_SUCCESS) {
           RCLCPP_INFO(this->get_logger(), "%s", packetHandler->getTxRxResult(dxl_comm_result));
         } else if (dxl_error != 0) {
