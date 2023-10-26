@@ -6,6 +6,9 @@
 #include <stdio.h>
 #include <math.h>
 
+// PCNT counter
+#include <driver/pcnt.h>
+
 // Including Web-Socket files
 #include <tuning_http_server.h>
 #include <wifi_handler.h>
@@ -18,9 +21,34 @@
 #define MAX_PWM (80.0f)
 #define MIN_PWM (60.0f)
 
-static const gpio_num_t enc_read_pinA = GPIO_NUM_33;
-static const gpio_num_t enc_read_pinB = GPIO_NUM_32;
+// static const gpio_num_t enc_read_pinA = GPIO_NUM_33;
+// static const gpio_num_t enc_read_pinB = GPIO_NUM_32;
 
+#define PCNT_H_LIM_VAL      10
+#define PCNT_L_LIM_VAL     -10
+#define PCNT_THRESH1_VAL    5
+#define PCNT_THRESH0_VAL   -5
+#define PCNT_INPUT_SIG_IO   33  // Pulse Input GPIO
+#define PCNT_INPUT_CTRL_IO  32  // Control GPIO HIGH=count up, LOW=count down
+
+typedef struct {
+    int unit;  // the PCNT unit that originated an interrupt
+    uint32_t status; // information on the event type that caused the interrupt
+} pcnt_evt_t;
+
+/* Decode what PCNT's unit originated an interrupt
+ * and pass this information together with the event type
+ * the main program using a queue.
+ */
+static void IRAM_ATTR pcnt_example_intr_handler(void *arg)
+{
+    int pcnt_unit = (int)arg;
+    pcnt_evt_t evt;
+    evt.unit = pcnt_unit;
+    /* Save the PCNT event type that caused an interrupt
+       to pass it to the main program */
+    pcnt_get_event_status(pcnt_unit, &evt.status);
+}
 /* Self Balancing Tuning Parameters
 float forward_offset = 2.51f;
 float forward_buffer = 3.1f;
@@ -82,48 +110,92 @@ int calculate_motor_command(const float ang_err, float *motor_cmd)
 }
 
 int readEncoder() {
-	int position = 0;
-	int lastEncoded = 0;
-	int encoded;
 
-	encoded = (gpio_get_level(enc_read_pinA) << 1) | gpio_get_level(enc_read_pinB);
-	int sum = (lastEncoded << 2) | encoded;
+	// pcnt_get_counter_value(unit, &count);
+	// int position = 0;
+	// int lastEncoded = 0;
+	// int encoded;
+
+	// encoded = (gpio_get_level(enc_read_pinA) << 1) | gpio_get_level(enc_read_pinB);
+	// int sum = (lastEncoded << 2) | encoded;
 	
-	if (sum == 0b1101 || sum == 0b0100 || sum == 0b0010 || sum == 0b1011) {
-		position++;
-	} else if (sum == 0b1110 || sum == 0b0111 || sum == 0b0001 || sum == 0b1000) {
-		position--;
-	}
-	// Hypothesis:
-	// Wave 1 => 00 11 00 11 00 11 00 11 00 11, amplitude lasts for two timeframes
-	// Wave 2 => 11 00 11 00 11 00 11 00 11 00, amplitude lasts for two timeframes
+	// if (sum == 0b1101 || sum == 0b0100 || sum == 0b0010 || sum == 0b1011) {
+	// 	position++;
+	// } else if (sum == 0b1110 || sum == 0b0111 || sum == 0b0001 || sum == 0b1000) {
+	// 	position--;
+	// }
+	// // Hypothesis:
+	// // Wave 1 => 00 11 00 11 00 11 00 11 00 11, amplitude lasts for two timeframes
+	// // Wave 2 => 11 00 11 00 11 00 11 00 11 00, amplitude lasts for two timeframes
 
-	// Use 'position' as the relative encoder value, and do whatever you need to do with it
+	// // Use 'position' as the relative encoder value, and do whatever you need to do with it
 	
-	lastEncoded = encoded;
+	// lastEncoded = encoded;
 
-	return position;
+	// return position;
+	return 0;
 }
 
 //The main task to balance the robot
 void balance_task(void *arg)
-{
+{	
+	int16_t angle = 0;
+	int unit = PCNT_UNIT_0;
+	pcnt_config_t pcnt_config = {
+		// Set PCNT input signal and control GPIOs
+		.pulse_gpio_num = PCNT_INPUT_SIG_IO,
+		.ctrl_gpio_num = PCNT_INPUT_CTRL_IO,
+		.channel = PCNT_CHANNEL_0,
+		.unit = unit,
+		// What to do on the positive / negative edge of pulse input?
+		.pos_mode = PCNT_COUNT_INC,   // Count up on the positive edge
+		.neg_mode = PCNT_COUNT_DIS,   // Keep the counter value on the negative edge
+		// What to do when control input is low or high?
+		.lctrl_mode = PCNT_MODE_REVERSE, // Reverse counting direction if low
+		.hctrl_mode = PCNT_MODE_KEEP,    // Keep the primary counter mode if high
+		// Set the maximum and minimum limit values to watch
+		.counter_h_lim = PCNT_H_LIM_VAL,
+		.counter_l_lim = PCNT_L_LIM_VAL,
+    };
+    /* Initialize PCNT unit */
+    pcnt_unit_config(&pcnt_config);
 
+	 /* Configure and enable the input filter */
+    pcnt_set_filter_value(unit, 100);
+    pcnt_filter_enable(unit);
 
+    /* Set threshold 0 and 1 values and enable events to watch */
+    pcnt_set_event_value(unit, PCNT_EVT_THRES_1, PCNT_THRESH1_VAL);
+    pcnt_event_enable(unit, PCNT_EVT_THRES_1);
+    pcnt_set_event_value(unit, PCNT_EVT_THRES_0, PCNT_THRESH0_VAL);
+    pcnt_event_enable(unit, PCNT_EVT_THRES_0);
+    /* Enable events on zero, maximum and minimum limit values */
+    pcnt_event_enable(unit, PCNT_EVT_ZERO);
+    pcnt_event_enable(unit, PCNT_EVT_H_LIM);
+    pcnt_event_enable(unit, PCNT_EVT_L_LIM);
+
+    /* Initialize PCNT's counter */
+    pcnt_counter_pause(unit);
+    pcnt_counter_clear(unit);
+
+    /* Install interrupt service and add isr callback handler */
+    pcnt_isr_service_install(0);
+    pcnt_isr_handler_add(unit, pcnt_example_intr_handler, (void *)unit);
+
+    /* Everything is set up, now go to counting */
+    pcnt_counter_resume(unit);
 	/**
-	 * Configuring GPIOs
+	 * Configuring GPIOs	
 	 */
 
-	gpio_config_t io_conf = {
-        .mode = GPIO_MODE_OUTPUT,
-        .intr_type = GPIO_INTR_DISABLE,
-        .pull_down_en = 0,
-        .pull_up_en = 1,
-        .pin_bit_mask = ((1ULL<<enc_read_pinA) || (1ULL<<enc_read_pinB)),
-    };
+	// gpio_config_t io_conf = {
+    //     .mode = GPIO_MODE_OUTPUT,
+    //     .intr_type = GPIO_INTR_DISABLE,
+    //     .pull_down_en = 0,
+    //     .pull_up_en = 1,
+    //     .pin_bit_mask = ((1ULL<<enc_read_pinA) || (1ULL<<enc_read_pinB)),
+    // };
 	
-
-	int angle = 0;
 	/**
 	 * euler_angles are the complementary pitch and roll angles obtained from mpu6050
 	 * mpu_offsets are the initial accelerometer angles at rest position
@@ -152,7 +224,7 @@ void balance_task(void *arg)
 	enable_motor_driver(a, NORMAL_MODE);
 	while (1)
 	{
-		angle = readEncoder();
+		pcnt_get_counter_value(unit, &angle);
 
 		int dir = calculate_motor_command(angle, &motor_cmd);
 
