@@ -21,15 +21,22 @@
 #define MAX_PWM (80.0f)
 #define MIN_PWM (60.0f)
 
-// static const gpio_num_t enc_read_pinA = GPIO_NUM_33;
-// static const gpio_num_t enc_read_pinB = GPIO_NUM_32;
+#define MOTORA 0
+#define MOTORB 1
 
-#define PCNT_H_LIM_VAL      10
-#define PCNT_L_LIM_VAL     -10
-#define PCNT_THRESH1_VAL    5
-#define PCNT_THRESH0_VAL   -5
-#define PCNT_INPUT_SIG_IO   33  // Pulse Input GPIO
-#define PCNT_INPUT_CTRL_IO  32  // Control GPIO HIGH=count up, LOW=count down
+static const gpio_num_t enc_read_pinA = GPIO_NUM_14;
+static const gpio_num_t enc_read_pinB = GPIO_NUM_12;
+static const gpio_num_t motor_A_pinA = GPIO_NUM_32;
+static const gpio_num_t motor_A_pinB = GPIO_NUM_33;
+static const gpio_num_t motor_B_pinA = GPIO_NUM_19;
+static const gpio_num_t motor_B_pinB = GPIO_NUM_21;
+
+#define PCNT_H_LIM_VAL      180
+#define PCNT_L_LIM_VAL     -180
+#define PCNT_THRESH1_VAL    10
+#define PCNT_THRESH0_VAL   -10
+#define PCNT_INPUT_SIG_IO   enc_read_pinA  // Pulse Input GPIO
+#define PCNT_INPUT_CTRL_IO  enc_read_pinB  // Control GPIO HIGH=count up, LOW=count down
 
 typedef struct {
     int unit;  // the PCNT unit that originated an interrupt
@@ -40,6 +47,7 @@ typedef struct {
  * and pass this information together with the event type
  * the main program using a queue.
  */
+
 static void IRAM_ATTR pcnt_example_intr_handler(void *arg)
 {
     int pcnt_unit = (int)arg;
@@ -54,11 +62,60 @@ float forward_offset = 2.51f;
 float forward_buffer = 3.1f;
 */
 
+// Function to enable Motor driver A in Normal Mode
+void run_motorA(int direction, int duty_cycle)
+{
+	for ( int i = 0; i <= 100; i++ ){
+		if (i <= duty_cycle){
+			if (direction == 1) {
+				gpio_set_level(motor_A_pinA, 1);
+				gpio_set_level(motor_A_pinB, 0);
+			} else if (direction == -1) {
+				gpio_set_level(motor_A_pinA, 0);
+				gpio_set_level(motor_A_pinB, 1);
+			} else if (direction == 0) {
+				gpio_set_level(motor_A_pinA, 0);
+				gpio_set_level(motor_A_pinB, 0);
+			}
+		}
+		else{
+			gpio_set_level(motor_A_pinA, 0);
+			gpio_set_level(motor_A_pinB, 0);
+		}
+		vTaskDelay(100/portTICK_PERIOD_MS);
+	}
+}
+
+void run_motorB(int direction, int duty_cycle)
+{
+	for ( int i = 0; i <= duty_cycle; i++ ){
+
+		if (direction == 1) {
+			gpio_set_level(motor_B_pinA, 1);
+			gpio_set_level(motor_B_pinB, 0);
+		} else if (direction == -1) {
+			gpio_set_level(motor_B_pinA, 0);
+			gpio_set_level(motor_B_pinB, 1);
+		} else if (direction == 0) {
+			gpio_set_level(motor_B_pinA, 0);
+			gpio_set_level(motor_B_pinB, 0);
+		}
+		vTaskDelay(100/portTICK_PERIOD_MS);
+	}
+	for (int i = duty_cycle ; i<=100 ; i++){
+
+		gpio_set_level(motor_B_pinA, 0);
+		gpio_set_level(motor_B_pinB, 0);
+		vTaskDelay(100/portTICK_PERIOD_MS);
+	}
+}
+
 // Calculate the motor inputs according to angle of the MPU
 int calculate_motor_command(const float ang_err, float *motor_cmd)
 {
 	
 	int target = read_pid_const().setpoint;
+	target = -20;
 	int dir = 0;
 	/** Error values **/
 	// Stores pitch error of previous iteration
@@ -136,11 +193,43 @@ int readEncoder() {
 	return 0;
 }
 
-//The main task to balance the robot
+//The main task to balance the robot	
 void balance_task(void *arg)
 {	
 	int16_t angle = 0;
 	int unit = PCNT_UNIT_0;
+	/**
+	 * Configuring GPIOs	
+	 */
+
+	gpio_config_t io_conf = {
+        .mode = GPIO_MODE_INPUT,
+        .intr_type = GPIO_INTR_DISABLE,
+        .pull_down_en = 0,
+        .pull_up_en = 1,
+        .pin_bit_mask = ((1ULL<<enc_read_pinA) | (1ULL<<enc_read_pinB)),
+    };
+	gpio_config_t io_conf2 = {
+        .mode = GPIO_MODE_OUTPUT,
+        .intr_type = GPIO_INTR_DISABLE,
+        .pull_down_en = 0,
+        .pull_up_en = 1,
+        .pin_bit_mask = ((1ULL<<motor_A_pinA) | (1ULL<<motor_A_pinB) | (1ULL<<motor_B_pinA) | (1ULL<<motor_B_pinB)),
+    };
+
+
+	esp_err_t err = gpio_config(&io_conf);
+	esp_err_t err = gpio_config(&io_conf2);
+
+	if (err==ESP_OK)
+	{
+		ESP_LOGI("debug", "GPIOs configured ");
+	}
+	else
+	{
+		ESP_LOGI("debug", "GPIOs not configured ");
+	}
+
 	pcnt_config_t pcnt_config = {
 		// Set PCNT input signal and control GPIOs
 		.pulse_gpio_num = PCNT_INPUT_SIG_IO,
@@ -184,17 +273,6 @@ void balance_task(void *arg)
 
     /* Everything is set up, now go to counting */
     pcnt_counter_resume(unit);
-	/**
-	 * Configuring GPIOs	
-	 */
-
-	// gpio_config_t io_conf = {
-    //     .mode = GPIO_MODE_OUTPUT,
-    //     .intr_type = GPIO_INTR_DISABLE,
-    //     .pull_down_en = 0,
-    //     .pull_up_en = 1,
-    //     .pin_bit_mask = ((1ULL<<enc_read_pinA) || (1ULL<<enc_read_pinB)),
-    // };
 	
 	/**
 	 * euler_angles are the complementary pitch and roll angles obtained from mpu6050
@@ -203,9 +281,9 @@ void balance_task(void *arg)
 	// float euler_angle[2], mpu_offset[2] = {0.0f, 0.0f};
 
 	/**
-	 * 1. motor_cmd : Stores theoritically calculated correction values obtained with PID.
-	 * 2. motor_pwm : Variable storing bounded data obtained from motor_cmd which will be used for
-	                  giving actual correction velocity to the motors
+	 * 1. motor_cmd :   Stores theoritically calculated correction values obtained with PID.
+	 * 2. motor_pwm :   Variable storing bounded data obtained from motor_cmd which will be used for
+					:   giving actual correction velocity to the motors
 	*/
 	float motor_cmd, motor_pwm = 0.0f;
 
@@ -218,45 +296,41 @@ void balance_task(void *arg)
 
     // Clearing the screen
     lv_obj_clean(lv_scr_act());
-#endif
+#endif	
+
+	gpio_set_level(motor_A_pinA, 0);
+	gpio_set_level(motor_A_pinB, 0);
 
 		// Function to enable Motor driver A in Normal Mode
 	enable_motor_driver(a, NORMAL_MODE);
 	while (1)
 	{
 		pcnt_get_counter_value(unit, &angle);
-
+		ESP_LOGI("debug", "Angle: %d", angle);
 		int dir = calculate_motor_command(angle, &motor_cmd);
 
-		//bound PWM values between max and min
-		motor_pwm = bound((motor_cmd), MIN_PWM, MAX_PWM);
+		//bound PWM values between max and min	
 
+		motor_pwm = bound((motor_cmd), MIN_PWM, MAX_PWM);
 		// Bot tilts downwards
 		if ((dir) == 1)
 		{
-			// setting motor A0 with definite speed(duty cycle of motor driver PWM) in Forward direction
-			set_motor_speed(MOTOR_A_0, MOTOR_FORWARD, motor_pwm);
-			// setting motor A1 with definite speed(duty cycle of motor driver PWM) in Forward direction
-			set_motor_speed(MOTOR_A_1, MOTOR_FORWARD, motor_pwm);
+			ESP_LOGI("debug", "Motor PWM:+ve\n");
+			run_motorA(dir, motor_pwm);
 		}
 
 		// Bot tilts Upwards
-		if ((dir) == 0)
+		if ((dir) == -1)
 		{
-			// setting motor A0 with definite speed(duty cycle of motor driver PWM) in Forward direction
-			set_motor_speed(MOTOR_A_0, MOTOR_BACKWARD, motor_pwm);
-			// setting motor A1 with definite speed(duty cycle of moto	r driver PWM) in Forward direction
-			set_motor_speed(MOTOR_A_1, MOTOR_BACKWARD, motor_pwm);
+			ESP_LOGI("debug", "Motor PWM:-ve\n");
+			run_motorA(dir, motor_pwm);	
 		}
 
 		// Bot remains in desired region for vertical balance
 		else
 		{
-			// stopping motor A0
-			set_motor_speed(MOTOR_A_0, MOTOR_STOP, 0);
-			// stopping motor A1
-			set_motor_speed(MOTOR_A_1, MOTOR_STOP, 0);
-		}
+			run_motorA(0, 0);
+		}	
 
 		//ESP_LOGI("debug","left_duty_cycle:  %f    ::  right_duty_cycle :  %f  :: error :  %f  correction  :  %f  \n",left_duty_cycle, right_duty_cycle, error, correction);
 		// ESP_LOGI("debug", "KP: %f ::  KI: %f  :: KD: %f :: Setpoint: %0.2f :: Roll: %0.2f | Pitch: %0.2f | PitchError: %0.2f", read_pid_const().kp, read_pid_const().ki, read_pid_const().kd, read_pid_const().setpoint, euler_angle[0], euler_angle[1], ang_err);
@@ -269,7 +343,7 @@ void balance_task(void *arg)
 			reset_val_changed_pid_const();
 		}
 #endif				
-		vTaskDelay(10 / portTICK_PERIOD_MS);
+		vTaskDelay(100 / portTICK_PERIOD_MS);
 		
 	}
 
@@ -281,7 +355,7 @@ void balance_task(void *arg)
 void app_main()
 {
   // Starts tuning server for wireless control
-	start_tuning_http_server();
+	// start_tuning_http_server();	
 
 	// xTaskCreate -> Create a new task and add it to the list of tasks that are ready to run
 	xTaskCreate(&balance_task, "balance task", 4096, NULL, 1, NULL);
