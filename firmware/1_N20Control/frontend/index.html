@@ -77,22 +77,11 @@
 	</head>
 	<body>
 		<main>
-			<div class="button-group">
-				<h3>Setpoint</h3>
-				<button>&lt;</button>
-				<input type="number" value="0.000" id="setpoint" />
-				<button>&gt;</button>
-			</div>
+			<h1>Line Following</h1>
 			<div class="button-group">
 				<h3>Kp</h3>
 				<button>&lt;</button>
 				<input type="number" value="0.000" id="kp" />
-				<button>&gt;</button>
-			</div>
-			<div class="button-group">
-				<h3>Kd</h3>
-				<button>&lt;</button>
-				<input type="number" value="0.000" id="kd" />
 				<button>&gt;</button>
 			</div>
 			<div class="button-group">
@@ -102,9 +91,9 @@
 				<button>&gt;</button>
 			</div>
 			<div class="button-group">
-				<h3>setpoint</h3>
+				<h3>Kd</h3>
 				<button>&lt;</button>
-				<input type="number" value="0.000" id="setpoint" />
+				<input type="number" value="0.000" id="kd" />
 				<button>&gt;</button>
 			</div>
 		</main>
@@ -112,7 +101,9 @@
 			let inpArray = document.querySelectorAll("input[type='number']");
 			function submitVals() {
 				const data = {};
-				data["setpoint"] = parseFloat(document.getElementById("setpoint").value);
+				data["kp"] = parseFloat(document.getElementById("kp").value);
+				data["ki"] = parseFloat(document.getElementById("ki").value);
+				data["kd"] = parseFloat(document.getElementById("kd").value);
 				let finaldata = JSON.stringify(data);
 				console.log(finaldata);
 

@@ -32,7 +32,6 @@ typedef struct pid_const
     float kp;
     float ki;
     float kd;
-    float setpoint;
     bool val_changed;
 } pid_const_t;
 

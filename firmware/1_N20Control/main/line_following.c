@@ -24,8 +24,8 @@
 // static const gpio_num_t enc_read_pinA = GPIO_NUM_33;
 // static const gpio_num_t enc_read_pinB = GPIO_NUM_32;
 
-#define PCNT_H_LIM_VAL      300
-#define PCNT_L_LIM_VAL     -300	
+#define PCNT_H_LIM_VAL      2000
+#define PCNT_L_LIM_VAL     -2000
 #define PCNT_THRESH1_VAL    5
 #define PCNT_THRESH0_VAL   -5
 #define PCNT_INPUT_SIG_IO   14  // Pulse Input GPIO
@@ -90,7 +90,7 @@ int calculate_motor_command(const float ang_err, float *motor_cmd)
 
 	// Calculating p,i and d terms my multuplying corresponding proportional constants
 	P_term = read_pid_const().kp * ang_err;
-	I_term = read_pid_const().ki * bound(ang_area, -MAX_PITCH_AREA, MAX_PITCH_AREA);
+	// I_term = read_pid_const().ki * bound(ang_area, -MAX_PITCH_AREA, MAX_PITCH_AREA);
 	D_term = read_pid_const().kd * bound(ang_diff_rate, -MAX_PITCH_RATE, MAX_PITCH_RATE);
 
 	ang_correction = P_term + I_term + D_term;
