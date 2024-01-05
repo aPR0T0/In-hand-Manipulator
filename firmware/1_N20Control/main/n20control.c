@@ -28,8 +28,10 @@
 #define PCNT_L_LIM_VAL     -300	
 #define PCNT_THRESH1_VAL    5
 #define PCNT_THRESH0_VAL   -5
-#define PCNT_INPUT_SIG_IO   14  // Pulse Input GPIO
-#define PCNT_INPUT_CTRL_IO  27  // Control GPIO HIGH=count up, LOW=count down
+#define PCNT_INPUT_SIG_IO_0   14  // Pulse Input GPIO
+#define PCNT_INPUT_CTRL_IO_0  27  // Control GPIO HIGH=count up, LOW=count down
+#define PCNT_INPUT_SIG_IO_1   14  // Pulse Input GPIO
+#define PCNT_INPUT_CTRL_IO_1  27  // Control GPIO HIGH=count up, LOW=count down
 
 static const gpio_num_t enc_read_pinA = GPIO_NUM_14;
 static const gpio_num_t enc_read_pinB = GPIO_NUM_27;
@@ -153,12 +155,12 @@ void balance_task(void *arg)
 
 	esp_err_t err = gpio_config(&io_conf);
 
-	int16_t angle = 0;
-	int unit = PCNT_UNIT_0;
-	pcnt_config_t pcnt_config = {
+	int16_t angle0 = 0;
+	int unit0 = PCNT_UNIT_0;
+	pcnt_config_t pcnt_config_m0 = {
 		// Set PCNT input signal and control GPIOs
-		.pulse_gpio_num = PCNT_INPUT_SIG_IO,
-		.ctrl_gpio_num = PCNT_INPUT_CTRL_IO,
+		.pulse_gpio_num = PCNT_INPUT_SIG_IO_0,
+		.ctrl_gpio_num = PCNT_INPUT_CTRL_IO_0,
 		.channel = PCNT_CHANNEL_0,
 		.unit = unit,
 		// What to do on the positive / negative edge of pulse input?
@@ -172,32 +174,81 @@ void balance_task(void *arg)
 		.counter_l_lim = PCNT_L_LIM_VAL,
     };
     /* Initialize PCNT unit */
-    pcnt_unit_config(&pcnt_config);
+    pcnt_unit_config(&pcnt_config_m0);
 
 	 /* Configure and enable the input filter */
-    pcnt_set_filter_value(unit, 100);
-    pcnt_filter_enable(unit);
+    pcnt_set_filter_value(unit0, 100);
+    pcnt_filter_enable(unit0);
 
     /* Set threshold 0 and 1 values and enable events to watch */
-    pcnt_set_event_value(unit, PCNT_EVT_THRES_1, PCNT_THRESH1_VAL);
-    pcnt_event_enable(unit, PCNT_EVT_THRES_1);
-    pcnt_set_event_value(unit, PCNT_EVT_THRES_0, PCNT_THRESH0_VAL);
-    pcnt_event_enable(unit, PCNT_EVT_THRES_0);
+    pcnt_set_event_value(unit0, PCNT_EVT_THRES_1, PCNT_THRESH1_VAL);
+    pcnt_event_enable(unit0, PCNT_EVT_THRES_1);
+    pcnt_set_event_value(unit0, PCNT_EVT_THRES_0, PCNT_THRESH0_VAL);
+    pcnt_event_enable(unit0, PCNT_EVT_THRES_0);
     /* Enable events on zero, maximum and minimum limit values */
-    pcnt_event_enable(unit, PCNT_EVT_ZERO);
-    pcnt_event_enable(unit, PCNT_EVT_H_LIM);
-    pcnt_event_enable(unit, PCNT_EVT_L_LIM);
+    pcnt_event_enable(unit0, PCNT_EVT_ZERO);
+    pcnt_event_enable(unit0, PCNT_EVT_H_LIM);
+    pcnt_event_enable(unit0, PCNT_EVT_L_LIM);
 
     /* Initialize PCNT's counter */
-    pcnt_counter_pause(unit);
-    pcnt_counter_clear(unit);
+    pcnt_counter_pause(unit0);
+    pcnt_counter_clear(unit0);
 
     /* Install interrupt service and add isr callback handler */
     pcnt_isr_service_install(0);
-    pcnt_isr_handler_add(unit, pcnt_example_intr_handler, (void *)unit);
+    pcnt_isr_handler_add(unit0, pcnt_example_intr_handler, (void *)unit0);
 
     /* Everything is set up, now go to counting */
-    pcnt_counter_resume(unit);	/**
+    pcnt_counter_resume(unit0);	
+	/**
+     * @brief 
+     * 
+     */
+	int16_t angle1 = 0;
+	int unit1 = PCNT_UNIT_1;
+	pcnt_config_t pcnt_config_m1 = {
+		// Set PCNT input signal and control GPIOs
+		.pulse_gpio_num = PCNT_INPUT_SIG_IO_1,
+		.ctrl_gpio_num = PCNT_INPUT_CTRL_IO_1,
+		.channel = PCNT_CHANNEL_0,
+		.unit = unit,
+		// What to do on the positive / negative edge of pulse input?
+		.pos_mode = PCNT_COUNT_INC,   // Count up on the positive edge
+		.neg_mode = PCNT_COUNT_DIS,   // Keep the counter value on the negative edge
+		// What to do when control input is low or high?
+		.lctrl_mode = PCNT_MODE_REVERSE, // Reverse counting direction if low
+		.hctrl_mode = PCNT_MODE_KEEP,    // Keep the primary counter mode if high
+		// Set the maximum and minimum limit values to watch
+		.counter_h_lim = PCNT_H_LIM_VAL,
+		.counter_l_lim = PCNT_L_LIM_VAL,
+    };
+    /* Initialize PCNT unit */
+    pcnt_unit_config(&pcnt_config_m1);
+
+	 /* Configure and enable the input filter */
+    pcnt_set_filter_value(unit1, 100);
+    pcnt_filter_enable(unit1);
+
+    /* Set threshold 0 and 1 values and enable events to watch */
+    pcnt_set_event_value(unit1, PCNT_EVT_THRES_1, PCNT_THRESH1_VAL);
+    pcnt_event_enable(unit1, PCNT_EVT_THRES_1);
+    pcnt_set_event_value(unit1, PCNT_EVT_THRES_0, PCNT_THRESH0_VAL);
+    pcnt_event_enable(unit1, PCNT_EVT_THRES_0);
+    /* Enable events on zero, maximum and minimum limit values */
+    pcnt_event_enable(unit1, PCNT_EVT_ZERO);
+    pcnt_event_enable(unit1, PCNT_EVT_H_LIM);
+    pcnt_event_enable(unit1, PCNT_EVT_L_LIM);
+
+    /* Initialize PCNT's counter */
+    pcnt_counter_pause(unit1);
+    pcnt_counter_clear(unit1);
+
+    /* Install interrupt service and add isr callback handler */
+    pcnt_isr_service_install(0);
+    pcnt_isr_handler_add(unit1, pcnt_example_intr_handler, (void *)unit1);
+
+    /* Everything is set up, now go to counting */
+    pcnt_counter_resume(unit1);	/**
 	 * euler_angles are the complementary pitch and roll angles obtained from mpu6050
 	 * mpu_offsets are the initial accelerometer angles at rest position
 	*/
@@ -208,7 +259,7 @@ void balance_task(void *arg)
 	 * 2. motor_pwm : Variable storing bounded data obtained from motor_cmd which will be used for
 	                  giving actual correction velocity to the motors
 	*/
-	float motor_cmd, motor_pwm = 0.0f;
+	float motor0_cmd, motor1_cmd, motor_pwm = 0.0f;
 
 	// Pitch angle where you want to go - pitch_cmd, setpoint and mpu_offsets are linked to one another
 	// float pitch_cmd = 0.0f;
@@ -225,23 +276,27 @@ void balance_task(void *arg)
 	enable_motor_driver(a, NORMAL_MODE);
 	while (1)
 	{
-		pcnt_get_counter_value(unit, &angle);
+		pcnt_get_counter_value(unit0, &angle0);
+		pcnt_get_counter_value(unit1, &angle1);
 
 		// Calculating pitch angle
-		ESP_LOGI("debug", "Angle: %d", angle);
+		ESP_LOGI("debug", "Angle for Motor 0: %d", angle0);
+		ESP_LOGI("debug", "Angle for Motor 1: %d", angle1);
 
-		int dir = calculate_motor_command(angle, &motor_cmd);
+		int dir_0 = calculate_motor_command(angle0, &motor0_cmd);
+		int dir_1 = calculate_motor_command(angle1, &motor1_cmd);
 
-		//bound PWM values between max and min
-		motor_pwm = bound((motor_cmd), MIN_PWM, MAX_PWM);
 
-		// Bot tilts downwards
-		set_motor_speed(MOTOR_A_0, MOTOR_BACKWARD, motor_pwm);
 		if ((dir) == 1)
 		{
+			//bound PWM values between max and min
+			motor_pwm = bound((motor0_cmd), MIN_PWM, MAX_PWM);
 			ESP_LOGI("debug", "Forward");
 			// setting motor A0 with definite speed(duty cycle of motor driver PWM) in Forward direction
 			set_motor_speed(MOTOR_A_0, MOTOR_FORWARD, motor_pwm);
+
+			motor_pwm = bound((motor1_cmd), MIN_PWM, MAX_PWM);
+			set_motor_speed(MOTOR_A_1, MOTOR_FORWARD, motor_pwm);
 		}
 
 		// Bot tilts Upwards
@@ -255,9 +310,17 @@ void balance_task(void *arg)
 		// Bot remains in desired region for vertical balance
 		else
 		{
+
+			//bound PWM values between max and min
+			motor_pwm = bound((motor0_cmd), MIN_PWM, MAX_PWM);
 			ESP_LOGI("debug", "Backward");
 			// setting motor A0 with definite speed(duty cycle of motor driver PWM) in Forward direction
 			set_motor_speed(MOTOR_A_0, MOTOR_BACKWARD, motor_pwm);
+
+			//bound PWM values between max and min
+			motor_pwm = bound((motor0_cmd), MIN_PWM, MAX_PWM);
+			// setting motor A0 with definite speed(duty cycle of motor driver PWM) in Forward direction
+			set_motor_speed(MOTOR_A_1, MOTOR_BACKWARD, motor_pwm);
 		}
 
 		//ESP_LOGI("debug","left_duty_cycle:  %f    ::  right_duty_cycle :  %f  :: error :  %f  correction  :  %f  \n",left_duty_cycle, right_duty_cycle, error, correction);
